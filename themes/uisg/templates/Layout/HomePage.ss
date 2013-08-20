@@ -2,10 +2,9 @@
   <div class="container">
   <div class="flexslider">
             <div class="hero-text">
-                <h2 class="blocktext">Get Involved!</h2>
                 <ul>
-                    <li><a href="manage-your-org/">Manage Your Student Org</a></li>
-                    <li><a href="services/">Our Services</a></li>
+                    <li><a href="manage-your-org/">See all of our initiatives</a></li>
+                    <li><a href="services/">Get Involved with YOUR Student Government</a></li>
                 </ul>
             </div><!-- end hero-text -->
       <ul class="slides">
