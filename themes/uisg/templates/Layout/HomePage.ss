@@ -1,12 +1,12 @@
 <div class="slider-container">
   <div class="container">
   <div class="flexslider">
-            <div class="hero-text">
+           <!-- <div class="hero-text">
                 <ul>
                     <li><a href="manage-your-org/">See all of our initiatives</a></li>
                     <li><a href="services/">Get Involved with YOUR Student Government</a></li>
                 </ul>
-            </div><!-- end hero-text -->
+            </div>--><!-- end hero-text -->
       <ul class="slides">
         <%--
         <% loop Slides %>
