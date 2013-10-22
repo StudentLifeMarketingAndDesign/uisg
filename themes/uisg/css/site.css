@@ -1,0 +1,29 @@
+body {
+        background-color: #292929;
+        background-image: url('../images/background.jpg');
+        background-repeat: repeat-x;
+}
+
+/* Nav Overrides */
+
+.header{
+	background-color: transparent;
+}
+
+.logo {
+	color: white;
+}
+
+/* Main Nav Color Override */
+@media screen and (min-width: 768px) {
+	.nav-main li:first-child {
+		border-left: none;
+	}
+	.nav-main li {
+		border-right: none;
+	}
+	.nav-main a {
+		color: white;
+	}
+}
+
