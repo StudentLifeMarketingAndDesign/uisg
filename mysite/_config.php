@@ -26,9 +26,13 @@ FulltextSearchable::enable();
 if (class_exists('SiteTree')) SiteTree::enable_nested_urls();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Security::setDefaultAdmin('admin','password');
 
 Director::set_environment_type("dev");
+=======
+Director::set_environment_type("live");
+>>>>>>> 3c7783584cc2e6de8f8747a7db50f356e95420ff
 =======
 Director::set_environment_type("live");
 >>>>>>> 3c7783584cc2e6de8f8747a7db50f356e95420ff
