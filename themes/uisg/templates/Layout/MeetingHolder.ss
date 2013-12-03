@@ -5,7 +5,7 @@
 
 	<h1>$Title</h1>
 			$Content
-			<% loop Children %>
+			<% loop AllChildren %>
 				<h2> $Title </h2>
 					$Content
 				<table class="meetings">
