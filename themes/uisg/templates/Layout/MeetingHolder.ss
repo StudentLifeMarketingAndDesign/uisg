@@ -1,7 +1,9 @@
-<div>
-	<div id="content">
-		<div class="innerContent">
-			<h1>$Title</h1>
+<div class="gradient">
+	<div class="container clearfix">
+		<div class="white-cover"></div>
+	    <section class="main-content <% if $BackgroundImage %>margin-top<% end_if %>">
+
+	<h1>$Title</h1>
 			$Content
 			<% loop Children %>
 				<h2> $Title </h2>
@@ -36,9 +38,10 @@
 		</table>
 				
 			<% end_loop %>
-			
-			$Form
-		</div>
+	    </section>
+	    <section class="sec-content hide-print">
+	    	<% include SideNav %>
+	    </section>
 	</div>
 </div>
 
