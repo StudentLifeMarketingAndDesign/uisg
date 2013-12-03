@@ -8,11 +8,6 @@
 		<div class="white-cover"></div>
 	    <section class="main-content <% if $BackgroundImage %>margin-top<% end_if %>">
 <h1>$Title</h1>
-	<% if Level(2) %>
-<div id="breadcrumbs">
-		<a href="/meetings/">Meetings</a> &raquo; $Title
-	</div>
-	<% end_if %>
 	
 		<h2>Meeting Date:</h2> <p>$Date.NiceUS at $Time</p>
 		<h2>Location:</h2><p>$Location</p>
