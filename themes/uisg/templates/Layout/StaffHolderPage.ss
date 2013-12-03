@@ -5,20 +5,12 @@
       	$Content
       	<% loop Teams %>
                   <h2 class="staff-title">$Title</h2>
+                  <% if $GroupImage %>
+                        <img src="$GroupImage.URL" alt="Group Photo of $Title" />
+                  <% end_if %>
                   <ul class="staff-list">
                   <% loop $SortedStaffPages %>
                         <li>
-                              <% if $Photo %>
-                              <a href="$Link" class="staff-link">
-                                    
-                                    <img src="$Photo.CroppedImage(350,234).URL" alt="$FirstName $LastName" class="staff-img">
-                              </a>
-                              <% else %>
-                              <a href="$Link" class="staff-link">
-                                    
-                                    <img src="{$ThemeDir}/images/dosl.png" alt="$FirstName $LastName" class="staff-img">
-                              </a>
-                              <% end_if %>
                               <p class="staff-name">
                                     <a href="$Link">$FirstName $LastName</a>
                                     <% if $Position %><small class="staff-position">$Position</small><% end_if %>
