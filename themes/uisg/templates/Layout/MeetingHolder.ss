@@ -1,9 +1,8 @@
-<div id="content1"  class="typography padding">
+<div>
 	<div id="content">
 		<div class="innerContent">
 			<h1>$Title</h1>
 			$Content
-			<hr/>
 			<% loop Children %>
 				<h2> $Title </h2>
 					$Content
