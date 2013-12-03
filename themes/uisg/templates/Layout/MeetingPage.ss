@@ -1,7 +1,13 @@
-<div>
-	<div id="content">
-	<div class="innerContent">
-	<h1>$Title</h1>
+<% if $BackgroundImage %>
+	<div class="img-container" style="background-image: url($BackgroundImage.URL);">
+		<div class="img-fifty-top"></div>
+	</div>
+<% end_if %>
+<div class="gradient">
+	<div class="container clearfix">
+		<div class="white-cover"></div>
+	    <section class="main-content <% if $BackgroundImage %>margin-top<% end_if %>">
+<h1>$Title</h1>
 	<% if Level(2) %>
 <div id="breadcrumbs">
 		<a href="/meetings/">Meetings</a> &raquo; $Title
@@ -30,6 +36,10 @@
 			<h3>Additional Notes:</h3>
 			$Notes
 		<% end_if %>
-		</div> 
+	    </section>
+	    <section class="sec-content hide-print">
+	    	<% include SideNav %>
+	    </section>
 	</div>
 </div>
+<%-- <% include TopicsAndNews %> --%>
