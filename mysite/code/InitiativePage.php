@@ -1,12 +1,15 @@
 <?php
-class MeetingsPage extends Page {
+class InitiativePage extends Page {
 
 	private static $db = array(
+		"HideTextTitle" => "Boolean",
+		"InitiativeTitle" => "Text"
 	);
 
 	private static $has_one = array(
 	
 		"MainImage" => "Image"
+		
 	
 	);
 	
@@ -17,7 +20,9 @@ class MeetingsPage extends Page {
 		
 
 		//$fields->removeFieldFromTab('Root.Content.Main', 'Content');
-		$fields->addFieldToTab('Root.Main', new UploadField('Image','Main Image'));
+		$fields->addFieldToTab('Root.Main', new UploadField('MainImage','Main Image'));
+		$fields->addFieldToTab('Root.Main', new CheckboxField('HideTextTitle','Hide Text Title'));
+		$fields->addFieldToTab('Root.Main', new TextField('InitiativeTitle', 'Initiative Title'));
 		//$fields->addFieldToTab('Root.Content.Main', new HTMLEditorField('Content','Content'));
 
 		return $fields;
@@ -26,7 +31,7 @@ class MeetingsPage extends Page {
 	
 
 }
-class MeetingsPage_Controller extends Page_Controller {
+class InitiativePage_Controller extends Page_Controller {
 
 	public static $allowed_actions = array (
 	);
