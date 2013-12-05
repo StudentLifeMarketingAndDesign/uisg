@@ -3,7 +3,6 @@ class InitiativePage extends Page {
 
 	private static $db = array(
 		"HideTextTitle" => "Boolean",
-		"InitiativeTitle" => "Text"
 	);
 
 	private static $has_one = array(
@@ -20,9 +19,8 @@ class InitiativePage extends Page {
 		
 
 		//$fields->removeFieldFromTab('Root.Content.Main', 'Content');
-		$fields->addFieldToTab('Root.Main', new UploadField('MainImage','Main Image'));
-		$fields->addFieldToTab('Root.Main', new CheckboxField('HideTextTitle','Hide Text Title'));
-		$fields->addFieldToTab('Root.Main', new TextField('InitiativeTitle', 'Initiative Title'));
+		$fields->addFieldToTab('Root.Main', new UploadField('MainImage','Main Image'), "Content");
+		$fields->addFieldToTab('Root.Main', new CheckboxField('HideTextTitle','Hide Text Title'), "Content");
 		//$fields->addFieldToTab('Root.Content.Main', new HTMLEditorField('Content','Content'));
 
 		return $fields;

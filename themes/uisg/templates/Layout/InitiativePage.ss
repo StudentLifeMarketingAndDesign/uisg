@@ -10,7 +10,7 @@
 			</div>
 			<% end_if %>
 	    	<% if not $HideTextTitle %>
-	    		<h1> $InitiativeTitle </h1>
+	    		<h1> $Title </h1>
 	    	<% end_if %>
 	    	$Content
 	    </section>
