@@ -148,7 +148,6 @@ table.meetings th {
 	clear: both;
 }
 .initiatives-list {
-	font-size: 0.1px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -165,10 +164,12 @@ table.meetings th {
 	text-align: left;
 	@media screen and (min-width: $break-small) {
 		display: inline-block;
-		width: 48%;
+		width: 49%;
+		padding-left: 1.1em; 
 	}
 	@media screen and (min-width: $break-medium) {
-		width: 23%;
+		width: 50%;
+		padding-left: 1.6em;
 	}
 }
 .initiatives-list .filler {
@@ -207,3 +208,59 @@ table.meetings th {
 
 
 
+.NoLogo {
+		position: absolute;
+		font-family: "proxima-nova-condensed", sans-serif;
+		padding-left: 2em;
+		padding-right: 2em; 
+		padding-top: 22%;
+		font-size: 1.5rem;
+		color: white; 
+		font-weight: bold;
+		text-transform: uppercase; 
+		text-align: center;
+		line-height: 1em; 
+		width: 100%;
+	@media screen and (min-width: $break-small) {
+		position: absolute;
+		font-family: "proxima-nova-condensed", sans-serif;
+		padding-left: 2em;
+		padding-right: 2em; 
+		padding-top: 21%;
+		font-size: 1.2rem;
+		color: white; 
+		font-weight: bold;
+		text-transform: uppercase; 
+		text-align: center;
+		line-height: 1em; 
+		width: 100%
+	}
+	@media screen and (min-width: 586px) {
+		position: absolute;
+		font-family: "proxima-nova-condensed", sans-serif;
+		padding-left: 2em;
+		padding-right: 2em; 
+		padding-top: 21%;
+		font-size: 1.5rem;
+		color: white; 
+		font-weight: bold;
+		text-transform: uppercase; 
+		text-align: center;
+		line-height: 1em; 
+		width: 100%
+	}
+	@media screen and (min-width: 1132px) {
+		position: absolute;
+		font-family: "proxima-nova-condensed", sans-serif;
+		padding-left: .4em;
+		padding-right: .4em;
+		padding-top: 20%;
+		font-size: 2rem;
+		color: white; 
+		font-weight: bold;
+		text-transform: uppercase; 
+		text-align: center;
+		line-height: 1em; 
+		width: 100%;
+	}
+}

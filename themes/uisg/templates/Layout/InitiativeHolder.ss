@@ -12,21 +12,22 @@
 			<ul class="initiatives-list">
                   <% loop $Children %>
                         <li>
-                              <% if $Photo %>
+                              <% if $MainImage %>
                               <a href="$Link" class="initiatives-link">
                                     
-                                    <img src="$Photo.CroppedImage(350,234).URL" alt="$FirstName $LastName" class="initiatives-img">
+                                    <img src="$MainImage.CroppedImage(350,234).URL" alt="$FirstName $LastName" class="initiatives-img">
                               </a>
                               <% else %>
                               <a href="$Link" class="initiatives-link">
-                                    
-                                    <img src="division-project/images/dosl.png" alt="$FirstName $LastName" class="initiatives-img">
+                       
+										
+	                          <p class = "NoLogo">$Title</p>  
+							  <img src="division-project/images/dosl1.png" alt="$FirstName $LastName" class="initiatives-img">	 		
+								 
+								 		
                               </a>
                               <% end_if %>
-                              <p class="initiatives-name">
-                                    <a href="$Link">$Title</a>
-                                
-                              </p>
+                         
                         </li>
                   <% end_loop %>
                         <li class="filler"></li>

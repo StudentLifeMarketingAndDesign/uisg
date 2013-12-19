@@ -4,7 +4,7 @@
 	    <section class="main-content <% if $BackgroundImage %>margin-top<% end_if %>">
 	    	$Form
 	    	<% if $MainImage %>
-			<div class="MainImage">
+			<div>
 			$MainImage
 			</div>
 			<% end_if %>
