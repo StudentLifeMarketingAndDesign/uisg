@@ -6,9 +6,10 @@
 <div class="gradient">
 	<div class="container clearfix">
 		<div class="white-cover"></div>
-	    <section class="main-content <% if $BackgroundImage %>margin-top<% end_if %>">
+	    <section class="initiatives-content <% if $BackgroundImage %>margin-top<% end_if %>">
 	    	$Form
 	    	$Content
+	    
 			<ul class="initiatives-list">
                   <% loop $Children %>
                         <li>
@@ -32,9 +33,9 @@
                   <% end_loop %>
                         <li class="filler"></li>
                         <li class="filler"></li>
-                  </ul>
-                  
-	    </section>
+            </ul>
+        </section>
+                
 	    <section class="sec-content hide-print">
 	    	<% include SideNav %>
 	    </section>
