@@ -1,4 +1,3 @@
-
 <div class="gradient">
 	<div class="container clearfix">
 		<div class="white-cover"></div>

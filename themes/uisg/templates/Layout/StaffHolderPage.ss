@@ -1,3 +1,4 @@
+<div class="bg">
 <div class="staff-container">
 <div class="container clearfix">
       <section class="staff-content">
@@ -6,7 +7,7 @@
       	<% loop Teams %>
                   <h2 class="staff-title">$Title</h2>
                   <% if $GroupImage %>
-                        <img src="$GroupImage.URL" alt="Group Photo of $Title" />
+                        <img src="$GroupImage.URL" alt="Group Photo of $Title" class="group-image" />
                   <% end_if %>
                   <ul class="staff-list">
                   <% loop $SortedStaffPages %>
@@ -24,6 +25,7 @@
       	<% end_loop %>
       	
       </section>
+</div>
 </div>
 </div>
 <%-- <% include TopicsAndNews %> --%>
