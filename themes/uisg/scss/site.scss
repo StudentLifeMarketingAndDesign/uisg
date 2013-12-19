@@ -16,6 +16,10 @@ body {
 	color: white;
 }
 
+.bg {
+	background: white;
+}
+
 /* Main Nav Color Override */
 @media screen and (min-width: 768px) {
 	.nav-main li:first-child {
@@ -32,6 +36,9 @@ body {
 .mod h3 {
 	color: white;
 }
+
+
+
 
 /* Fix Staff Background */
 .initiatives-container {background-color: white;}
@@ -120,8 +127,23 @@ table.meetings th {
 	height: 549px; 
 }
 
-/* Staff Page
-========================================================================== */
+/* Topics in Subfooter */
+
+.topics a {
+	color: #ffedb8;
+}
+
+.topics {
+	color: #ccc;
+}
+
+.footer {
+	border: none;
+}
+
+
+/* Initiative Page*/
+
 .initiatives-title {
 	clear: both;
 }
@@ -182,6 +204,9 @@ table.meetings th {
 .initiatives-name {
 	margin: 0;
 }
+/* Staff Page */
+
+
 
 .NoLogo {
 		position: absolute;
