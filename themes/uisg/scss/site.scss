@@ -226,46 +226,18 @@ table.meetings th {
 		line-height: 1em; 
 		width: 100%;
 	@media screen and (min-width: $break-small) {
-		position: absolute;
-		font-family: "proxima-nova-condensed", sans-serif;
-		padding-left: 2em;
-		padding-right: 2em; 
 		padding-top: 21%;
 		font-size: 1.2rem;
 		color: white; 
-		font-weight: bold;
-		text-transform: uppercase; 
-		text-align: center;
-		line-height: 1em; 
-		width: 100%
 	}
 	@media screen and (min-width: 586px) {
-		position: absolute;
-		font-family: "proxima-nova-condensed", sans-serif;
-		padding-left: 2em;
-		padding-right: 2em; 
-		padding-top: 21%;
 		font-size: 1.5rem;
-		color: white; 
-		font-weight: bold;
-		text-transform: uppercase; 
-		text-align: center;
-		line-height: 1em; 
-		width: 100%
 	}
 	@media screen and (min-width: 1132px) {
-		position: absolute;
-		font-family: "proxima-nova-condensed", sans-serif;
 		padding-left: .4em;
 		padding-right: .4em;
 		padding-top: 20%;
 		font-size: 2rem;
-		color: white; 
-		font-weight: bold;
-		text-transform: uppercase; 
-		text-align: center;
-		line-height: 1em; 
-		width: 100%;
 	}
 }
 

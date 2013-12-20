@@ -362,63 +362,35 @@ table.meetings th {
 @media screen and (min-width: 480px) {
   /* line 215, ../scss/site.scss */
   .NoLogo {
-    position: absolute;
-    font-family: "proxima-nova-condensed", sans-serif;
-    padding-left: 2em;
-    padding-right: 2em;
     padding-top: 21%;
     font-size: 1.2rem;
     color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1em;
-    width: 100%;
   }
 }
 @media screen and (min-width: 586px) {
   /* line 215, ../scss/site.scss */
   .NoLogo {
-    position: absolute;
-    font-family: "proxima-nova-condensed", sans-serif;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 21%;
     font-size: 1.5rem;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1em;
-    width: 100%;
   }
 }
 @media screen and (min-width: 1132px) {
   /* line 215, ../scss/site.scss */
   .NoLogo {
-    position: absolute;
-    font-family: "proxima-nova-condensed", sans-serif;
     padding-left: .4em;
     padding-right: .4em;
     padding-top: 20%;
     font-size: 2rem;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1em;
-    width: 100%;
   }
 }
 
-/* line 272, ../scss/site.scss */
+/* line 244, ../scss/site.scss */
 .main-content.initiatives {
   padding: 0;
   margin: 0;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 277, ../scss/site.scss */
+  /* line 249, ../scss/site.scss */
   .initiatives-content {
     background: #fff;
     border-right: 1px solid #ddd;
