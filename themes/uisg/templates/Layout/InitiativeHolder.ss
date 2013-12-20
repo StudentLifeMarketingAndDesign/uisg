@@ -6,9 +6,10 @@
 <div class="gradient">
 	<div class="container clearfix">
 		<div class="white-cover"></div>
-	    <section class="initiatives-content <% if $BackgroundImage %>margin-top<% end_if %>">
+	    <section class="main-content <% if $BackgroundImage %>margin-top<% end_if %>">
 	    	$Form
 	    	$Content
+
 	    
 			<ul class="initiatives-list">
                   <% loop $Children %>
@@ -19,14 +20,11 @@
                                     <img src="$MainImage.CroppedImage(350,234).URL" alt="$FirstName $LastName" class="initiatives-img">
                               </a>
                               <% else %>
-                              <a href="$Link" class="initiatives-link">
-                       
-										
-	                          <p class = "NoLogo">$Title</p>  
-							  <img src="division-project/images/dosl1.png" alt="$FirstName $LastName" class="initiatives-img">	 		
-								 
-								 		
-                              </a>
+	                          <a href="$Link" class="initiatives-link no-image"> 
+	                             	<p class="NoLogo">$Title</p>  
+	                             	<img src="{$ThemeDir}/images/no-image-initiative.jpg" alt="$Title" class="initiatives-img"> 
+			                          	 		 		
+	                             </a>
                               <% end_if %>
                          
                         </li>

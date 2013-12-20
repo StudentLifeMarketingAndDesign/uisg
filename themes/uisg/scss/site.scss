@@ -1,4 +1,6 @@
 @import "../../../../division-project/scss/imports/_config.scss";
+@import "../../../../division-project/scss/imports/_mixins.scss";
+
 
 body {
         background-color: #292929;
@@ -148,6 +150,7 @@ table.meetings th {
 	clear: both;
 }
 .initiatives-list {
+	font-size: 0.1px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -159,17 +162,17 @@ table.meetings th {
 	width: 100%;
 }
 .initiatives-list li {
+	@include rem(15);
+	margin-bottom: 1em;
 	vertical-align: top;
 	text-align: left;
-	margin: 0.3em 0; 
 	@media screen and (min-width: $break-small) {
 		display: inline-block;
-		width: 47%;
-		margin: .3em; 
+		
+		width: 49%;
+		padding: 0;
 	}
 	@media screen and (min-width: $break-medium) {
-		width: 47%;
-		margin:0.51em;
 		
 	}
 }
@@ -182,6 +185,7 @@ table.meetings th {
 }
 .initiatives-link {
 	display: block;
+	margin-bottom: 0;
 	position: relative;
 }
 .initiatives-link:before {
@@ -264,6 +268,12 @@ table.meetings th {
 		width: 100%;
 	}
 }
+
+.main-content.initiatives {
+	padding: 0;
+	margin: 0;
+}
+
 .initiatives-content {
 	@media screen and (min-width: 768px){
 		background: #fff;

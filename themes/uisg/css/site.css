@@ -13,7 +13,83 @@
 -------------------------------------------*/
 /* 980px / 16px; */
 /* 1140px / 16px; */
-/* line 3, ../scss/site.scss */
+/*-------------------------------------------
+    Px to Em conversion
+-------------------------------------------*/
+/* usage: font-size: em(18) */
+/*-------------------------------------------
+    Px to Rem conversion
+-------------------------------------------*/
+/* usage
+    p {
+        @include font-size(13);
+    }
+*/
+/* =============================================================================
+    Vertical Gradient with solid colour back-up
+    ========================================================================= */
+/* Example
+
+body {
+    @include gradient($color: #F5F5F5, $start-color: #EEE, $end-color: #FFF);
+}
+
+*/
+/* =============================================================================
+    Transition mixin with speed and timing function
+    ========================================================================= */
+/* Example
+
+a {
+    @include transition(0.3s, ease-out);
+}
+
+*/
+/* =============================================================================
+    Border radius containing background clip
+    ========================================================================= */
+/* Example
+
+div {
+    @include border-radius(4px 0 0 4px);
+}
+
+*/
+/* =============================================================================
+    Box-shadow complete with vendor prefixes, up to 5 shadow parameters
+    ========================================================================= */
+/* Example
+
+div {
+    @include box-shadow(
+        0 0 5px 5px rgba(0,0,0,0.25),
+        inset 0 0 5px rgba(0,0,0,0.25),
+    );
+}
+
+*/
+/* =============================================================================
+    Calculate fluid ratio for an image based on two dimensions (width/height)
+    - http://goo.gl/Wl694
+    ========================================================================= */
+/* Example - The following will have fluid ratio from 4:1 at 800px to 2:1 at 300px.
+
+    HTML:
+    <div class="column">
+        <figure class="fixedratio"></figure>
+    </div>
+
+    CSS:
+    .column {
+        max-width: 800px;
+    }
+    .fixedratio {
+        @include fluid-ratio(800px 200px, 300px 150px);
+        background-image: url(/path/to/file/);
+    }
+
+*/
+/* line 5, ../scss/site.scss */
 body {
   background-color: #292929;
   background-image: url("../images/background.jpg");
@@ -21,50 +97,50 @@ body {
 }
 
 /* Nav Overrides */
-/* line 11, ../scss/site.scss */
+/* line 13, ../scss/site.scss */
 .header {
   background-color: rgba(29, 29, 29, 0.55);
 }
 
-/* line 15, ../scss/site.scss */
+/* line 17, ../scss/site.scss */
 .logo {
   color: white;
 }
 
-/* line 19, ../scss/site.scss */
+/* line 21, ../scss/site.scss */
 .bg {
   background: white;
 }
 
 /* Main Nav Color Override */
 @media screen and (min-width: 768px) {
-  /* line 25, ../scss/site.scss */
+  /* line 27, ../scss/site.scss */
   .nav-main li:first-child {
     border-left: none;
   }
 
-  /* line 28, ../scss/site.scss */
+  /* line 30, ../scss/site.scss */
   .nav-main li {
     border-right: none;
   }
 
-  /* line 31, ../scss/site.scss */
+  /* line 33, ../scss/site.scss */
   .nav-main a {
     color: white;
   }
 }
-/* line 36, ../scss/site.scss */
+/* line 38, ../scss/site.scss */
 .mod h3 {
   color: white;
 }
 
 /* Fix Staff Background */
-/* line 44, ../scss/site.scss */
+/* line 46, ../scss/site.scss */
 .initiatives-container {
   background-color: white;
 }
 
-/* line 46, ../scss/site.scss */
+/* line 48, ../scss/site.scss */
 #gradient {
   margin: auto;
   min-height: 700px;
@@ -72,12 +148,12 @@ body {
   -webkit-box-shadow: #b7b7b7 1px 1px 6px 1px inset;
 }
 
-/* line 53, ../scss/site.scss */
+/* line 55, ../scss/site.scss */
 #content1 {
   margin-bottom: -10px;
 }
 
-/* line 57, ../scss/site.scss */
+/* line 59, ../scss/site.scss */
 #content {
   padding-top: 13px;
   margin: auto;
@@ -87,68 +163,68 @@ body {
   -webkit-box-shadow: #b7b7b7 1px 1px 6px 1px inset;
 }
 
-/* line 66, ../scss/site.scss */
+/* line 68, ../scss/site.scss */
 #content ul {
   padding: 5px;
 }
 
-/* line 70, ../scss/site.scss */
+/* line 72, ../scss/site.scss */
 tr.odd {
   background: #ededed;
 }
 
-/* line 75, ../scss/site.scss */
+/* line 77, ../scss/site.scss */
 td.name {
   width: 255px;
   padding: 80px;
 }
 
-/* line 80, ../scss/site.scss */
+/* line 82, ../scss/site.scss */
 tr.even {
   background: #dedede;
 }
 
-/* line 84, ../scss/site.scss */
+/* line 86, ../scss/site.scss */
 tr {
   display: table-row;
   vertical-align: inherit;
   border-color: inherit;
 }
 
-/* line 90, ../scss/site.scss */
+/* line 92, ../scss/site.scss */
 td.initiative {
   padding: 20px;
 }
 
-/* line 94, ../scss/site.scss */
+/* line 96, ../scss/site.scss */
 td.img {
   width: 250px;
   background-color: #cfcfcf;
 }
 
-/* line 99, ../scss/site.scss */
+/* line 101, ../scss/site.scss */
 td {
   padding: 10px;
 }
 
-/* line 103, ../scss/site.scss */
+/* line 105, ../scss/site.scss */
 table.meetings {
   border-collapse: separate;
   width: 100%;
 }
 
-/* line 108, ../scss/site.scss */
+/* line 110, ../scss/site.scss */
 table.meetings th {
   font-size: 1.3em;
   color: #333;
 }
 
-/* line 115, ../scss/site.scss */
+/* line 117, ../scss/site.scss */
 .typography td a {
   color: #334371;
 }
 
-/* line 119, ../scss/site.scss */
+/* line 121, ../scss/site.scss */
 .innerContent {
   margin-top: 54px;
   margin: 0 auto;
@@ -156,42 +232,43 @@ table.meetings th {
   padding: 2em;
 }
 
-/* line 126, ../scss/site.scss */
+/* line 128, ../scss/site.scss */
 .MainImage {
   height: 549px;
 }
 
 /* Topics in Subfooter */
-/* line 132, ../scss/site.scss */
+/* line 134, ../scss/site.scss */
 .topics a {
   color: #ffedb8;
 }
 
-/* line 136, ../scss/site.scss */
+/* line 138, ../scss/site.scss */
 .topics {
   color: #ccc;
 }
 
-/* line 140, ../scss/site.scss */
+/* line 142, ../scss/site.scss */
 .footer {
   border: none;
 }
 
 /* Initiative Page*/
-/* line 147, ../scss/site.scss */
+/* line 149, ../scss/site.scss */
 .initiatives-title {
   clear: both;
 }
 
-/* line 150, ../scss/site.scss */
+/* line 152, ../scss/site.scss */
 .initiatives-list {
+  font-size: 0.1px;
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: justify;
 }
 
-/* line 156, ../scss/site.scss */
+/* line 159, ../scss/site.scss */
 .initiatives-list:after {
   /* http://www.barrelny.com/blog/text-align-justify-and-rwd/ */
   content: '';
@@ -199,58 +276,42 @@ table.meetings th {
   width: 100%;
 }
 
-/* line 161, ../scss/site.scss */
+/* line 164, ../scss/site.scss */
 .initiatives-list li {
+  font-size: 15px;
+  font-size: 1rem;
+  margin-bottom: 1em;
   vertical-align: top;
   text-align: left;
-  margin: 0.3em 0;
 }
 @media screen and (min-width: 480px) {
-  /* line 161, ../scss/site.scss */
+  /* line 164, ../scss/site.scss */
   .initiatives-list li {
     display: inline-block;
-    width: 47%;
-    margin: .3em;
-  }
-}
-@media screen and (min-width: 768px) {
-  /* line 161, ../scss/site.scss */
-  .initiatives-list li {
-    width: 47%;
-    margin: 0.51em;
+    width: 49%;
+    padding: 0;
   }
 }
 
-<<<<<<< HEAD
-/* line 154, ../scss/site.scss */
-=======
-/* line 175, ../scss/site.scss */
->>>>>>> bc4fbd5ba48bd898f74ac1ac09d097ee077b3b8a
+/* line 179, ../scss/site.scss */
 .initiatives-list .filler {
   height: 0;
   margin: 0;
 }
 
-<<<<<<< HEAD
-/* line 158, ../scss/site.scss */
-=======
-/* line 179, ../scss/site.scss */
->>>>>>> bc4fbd5ba48bd898f74ac1ac09d097ee077b3b8a
+/* line 183, ../scss/site.scss */
 .initiatives-img {
   width: 100%;
 }
 
-<<<<<<< HEAD
-/* line 161, ../scss/site.scss */
-=======
-/* line 182, ../scss/site.scss */
->>>>>>> bc4fbd5ba48bd898f74ac1ac09d097ee077b3b8a
+/* line 186, ../scss/site.scss */
 .initiatives-link {
   display: block;
+  margin-bottom: 0;
   position: relative;
 }
 
-/* line 187, ../scss/site.scss */
+/* line 191, ../scss/site.scss */
 .initiatives-link:before {
   content: '';
   position: absolute;
@@ -262,19 +323,9 @@ table.meetings th {
   transition: all .2s ease-in-out;
 }
 
-/* line 197, ../scss/site.scss */
+/* line 201, ../scss/site.scss */
 .initiatives-link:hover:before {
   border: 4px solid #ffce39;
-}
-
-/* line 200, ../scss/site.scss */
-.initiatives-name {
-  margin: 0;
-}
-
-/* line 201, ../scss/site.scss */
-.initiatives-position {
-  display: block;
 }
 
 /* line 204, ../scss/site.scss */
@@ -282,8 +333,18 @@ table.meetings th {
   margin: 0;
 }
 
+/* line 205, ../scss/site.scss */
+.initiatives-position {
+  display: block;
+}
+
+/* line 208, ../scss/site.scss */
+.initiatives-name {
+  margin: 0;
+}
+
 /* Staff Page */
-/* line 211, ../scss/site.scss */
+/* line 215, ../scss/site.scss */
 .NoLogo {
   position: absolute;
   font-family: "proxima-nova-condensed", sans-serif;
@@ -299,7 +360,7 @@ table.meetings th {
   width: 100%;
 }
 @media screen and (min-width: 480px) {
-  /* line 211, ../scss/site.scss */
+  /* line 215, ../scss/site.scss */
   .NoLogo {
     position: absolute;
     font-family: "proxima-nova-condensed", sans-serif;
@@ -316,7 +377,7 @@ table.meetings th {
   }
 }
 @media screen and (min-width: 586px) {
-  /* line 211, ../scss/site.scss */
+  /* line 215, ../scss/site.scss */
   .NoLogo {
     position: absolute;
     font-family: "proxima-nova-condensed", sans-serif;
@@ -333,7 +394,7 @@ table.meetings th {
   }
 }
 @media screen and (min-width: 1132px) {
-  /* line 211, ../scss/site.scss */
+  /* line 215, ../scss/site.scss */
   .NoLogo {
     position: absolute;
     font-family: "proxima-nova-condensed", sans-serif;
@@ -350,8 +411,14 @@ table.meetings th {
   }
 }
 
+/* line 272, ../scss/site.scss */
+.main-content.initiatives {
+  padding: 0;
+  margin: 0;
+}
+
 @media screen and (min-width: 768px) {
-  /* line 242, ../scss/site.scss */
+  /* line 277, ../scss/site.scss */
   .initiatives-content {
     background: #fff;
     border-right: 1px solid #ddd;
