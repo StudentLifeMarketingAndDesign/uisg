@@ -400,3 +400,20 @@ table.meetings th {
     float: left;
   }
 }
+
+/* HomePage Twitter Feed */
+/* line 262, ../scss/site.scss */
+.module.twitter {
+  border: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -ms-box-shadow: none;
+  background: none;
+}
+
+/* line 271, ../scss/site.scss */
+.twitter-timeline {
+  min-width: 100%;
+  display: block;
+}

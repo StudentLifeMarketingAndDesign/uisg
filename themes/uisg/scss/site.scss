@@ -256,3 +256,19 @@ table.meetings th {
 		float: left;
 	}
 }
+
+/* HomePage Twitter Feed */
+
+.module.twitter {
+	border: none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	-ms-box-shadow: none;
+	background: none;
+}
+
+.twitter-timeline {
+	min-width: 100%;
+	display: block;
+}
