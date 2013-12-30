@@ -268,7 +268,35 @@ table.meetings th {
 	background: none;
 }
 
+.module.facebook * {
+	width: 100%;
+}
+
+.module.facebook {
+	border-top: 4px solid $yellow;
+}
+
+.module.question-box .inner {
+	border-top: 4px solid $yellow;
+}
+
+.module.latest-post .inner{
+	border-top: 4px solid $yellow;
+}
+
+
 .twitter-timeline {
 	min-width: 100%;
 	display: block;
+}
+
+/* HomePage Contact Form Styles */
+
+#Form_ContactForm .Actions{
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+
+
 }

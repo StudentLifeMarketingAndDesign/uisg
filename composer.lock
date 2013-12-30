@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "9858818d592a9e5ec3fc90877c656004",
+    "hash": "483aa2bbc263cf5ee165ffa73e21ac81",
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -53,12 +53,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "a4b0baa2929e0238a87cb080c0ee9963c5747fb1"
+                "reference": "c87cfc35882eb50df3eef1734bfa52fbcd6c782c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/a4b0baa2929e0238a87cb080c0ee9963c5747fb1",
-                "reference": "a4b0baa2929e0238a87cb080c0ee9963c5747fb1",
+                "url": "https://api.github.com/repos/composer/installers/zipball/c87cfc35882eb50df3eef1734bfa52fbcd6c782c",
+                "reference": "c87cfc35882eb50df3eef1734bfa52fbcd6c782c",
                 "shasum": ""
             },
             "replace": {
@@ -103,6 +103,7 @@
                 "codeigniter",
                 "concrete5",
                 "drupal",
+                "elgg",
                 "fuelphp",
                 "installer",
                 "joomla",
@@ -119,7 +120,7 @@
                 "wordpress",
                 "zend"
             ],
-            "time": "2013-12-07 19:47:46"
+            "time": "2013-12-24 18:04:46"
         },
         {
             "name": "md/division-bar",
@@ -323,6 +324,50 @@
                 "silverstripe"
             ],
             "time": "2013-11-07 23:59:07"
+        },
+        {
+            "name": "silverstripe/contact-form",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bluehousegroup/silverstripe-contact-form.git",
+                "reference": "0c9b42e6b0445b68dfdaf766215fb590cb12f684"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bluehousegroup/silverstripe-contact-form/zipball/0c9b42e6b0445b68dfdaf766215fb590cb12f684",
+                "reference": "0c9b42e6b0445b68dfdaf766215fb590cb12f684",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "3.*",
+                "silverstripe/framework": "3.*"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "contact_form"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Uncle Cheese",
+                    "email": "unclecheese@leftandmain.com",
+                    "homepage": "http://leftandmain.com"
+                }
+            ],
+            "description": "Allows you to create a contact form in SilverStripe with optional Postmark integration. Works with Bootstrap Forms module.",
+            "keywords": [
+                "Forms",
+                "contact",
+                "email",
+                "form",
+                "postmark",
+                "silverstripe"
+            ],
+            "time": "2013-12-13 19:14:28"
         },
         {
             "name": "silverstripe/dashboard",
@@ -719,7 +764,7 @@
             ],
             "authors": [
                 {
-                    "name": "Uncle Cheese",
+                    "name": "Aaron Carlino",
                     "email": "unclecheese@leftandmain.com",
                     "homepage": "http://leftandmain.com"
                 }

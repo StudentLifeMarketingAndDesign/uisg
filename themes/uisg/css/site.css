@@ -413,7 +413,36 @@ table.meetings th {
 }
 
 /* line 271, ../scss/site.scss */
+.module.facebook * {
+  width: 100%;
+}
+
+/* line 275, ../scss/site.scss */
+.module.facebook {
+  border-top: 4px solid #ffce39;
+}
+
+/* line 279, ../scss/site.scss */
+.module.question-box .inner {
+  border-top: 4px solid #ffce39;
+}
+
+/* line 283, ../scss/site.scss */
+.module.latest-post .inner {
+  border-top: 4px solid #ffce39;
+}
+
+/* line 288, ../scss/site.scss */
 .twitter-timeline {
   min-width: 100%;
   display: block;
+}
+
+/* HomePage Contact Form Styles */
+/* line 295, ../scss/site.scss */
+#Form_ContactForm .Actions {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
 }

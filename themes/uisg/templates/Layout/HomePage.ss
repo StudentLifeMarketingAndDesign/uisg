@@ -61,30 +61,27 @@
     </div>
 <section class="home-highlights">
         <div class="container clearfix">
-          <div class="module twitter">   
-            <a class="twitter-timeline" height="430" href="https://twitter.com/uisg" data-widget-id="370624947627909120">Tweets by @uisg</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-        
-        </div>
-	        <% loop HomePageFeatures.Limit(2) %>
-
-	            <div class="module">
-	                <div class="media">
-	                <% if $YouTubeEmbed %>
-	                	$YouTubeEmbed
-	                <% else %>
-	                    <a href="$AssociatedPage.Link">
-	                        <img src="$Image.CroppedImage(350,197).URL" alt="$Title">
-	                    </a>
-	                <% end_if %>
-	                </div>
-	                <div class="inner">
-	                    <h3><a href="$AssociatedPage.Link">$Title</a></h3>
-	                    	$Content
-	                </div>
-	            </div>
-	         <% end_loop %>
+          <div class="module facebook">   
+            <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fuistudentgov&amp;width&amp;height=395&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=127918570561161" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:395px;" allowTransparency="true"></iframe>
+          </div>
+          <div class="module question-box">
+            <div class="inner">
+              <h3>Questions or Comments for UISG?</h3>
+              $ContactForm
+            </div>
+          </div>
+          <div class="module latest-post">
+            <div class="inner">
+              <h3>Latest Post</h3>
+              <% with $Page("news") %>
+                <% loop Entries("1") %>
+                  <h4>$Title</h4>
+                  $Content.Summary(50)
+                  <a href="#" target="_blank" class="hero-link">Read More</a>
+                <% end_loop %>
+              <% end_with %>
+            </div>
+          </div>
          </div><!-- end .container -->
     </section>
 
