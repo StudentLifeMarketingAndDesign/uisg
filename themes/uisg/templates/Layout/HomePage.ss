@@ -59,7 +59,7 @@
         </div>
 
     </div>
-	<section class="home-highlights">
+<section class="home-highlights">
         <div class="container clearfix">
           <div class="module twitter">   
             <a class="twitter-timeline" height="430" href="https://twitter.com/uisg" data-widget-id="370624947627909120">Tweets by @uisg</a>
@@ -67,7 +67,8 @@
 
         
         </div>
-	        <% loop HomePageFeatures.Limit(3) %>
+	        <% loop HomePageFeatures.Limit(2) %>
+
 	            <div class="module">
 	                <div class="media">
 	                <% if $YouTubeEmbed %>
@@ -86,5 +87,7 @@
 	         <% end_loop %>
          </div><!-- end .container -->
     </section>
+
+
 
     <%-- <% include TopicsAndNews %> --%>

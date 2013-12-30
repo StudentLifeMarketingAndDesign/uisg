@@ -159,12 +159,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "adbefe5556e3854ba4567b803a04efd413c37f59"
+                "reference": "560c18aaf6ba1eebfe8abc784f13400104ec734c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/adbefe5556e3854ba4567b803a04efd413c37f59",
-                "reference": "adbefe5556e3854ba4567b803a04efd413c37f59",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/560c18aaf6ba1eebfe8abc784f13400104ec734c",
+                "reference": "560c18aaf6ba1eebfe8abc784f13400104ec734c",
                 "shasum": ""
             },
             "require": {
@@ -198,7 +198,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2013-12-02 15:34:23"
+            "time": "2013-12-20 19:27:16"
         },
         {
             "name": "silverstripe-themes/simple",
@@ -459,19 +459,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chillu/silverstripe-recaptcha.git",
-                "reference": "7824a7c1105f9b7d89a984771bc7125af1747f77"
+                "reference": "13f24e9b9d25f97154739c2b012ecd3ae17f4b81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chillu/silverstripe-recaptcha/zipball/7824a7c1105f9b7d89a984771bc7125af1747f77",
-                "reference": "7824a7c1105f9b7d89a984771bc7125af1747f77",
+                "url": "https://api.github.com/repos/chillu/silverstripe-recaptcha/zipball/13f24e9b9d25f97154739c2b012ecd3ae17f4b81",
+                "reference": "13f24e9b9d25f97154739c2b012ecd3ae17f4b81",
                 "shasum": ""
             },
             "require": {
-                "silverstripe/framework": "3.*",
+                "silverstripe/framework": "~3.1",
                 "silverstripe/spamprotection": "*"
             },
             "type": "silverstripe-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
@@ -486,7 +491,7 @@
                 "silverstripe",
                 "spamprotection"
             ],
-            "time": "2013-07-04 12:59:00"
+            "time": "2013-12-19 19:18:36"
         },
         {
             "name": "silverstripe/spamprotection",
@@ -569,12 +574,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "972ee075f6cade3113d9625a857c5883ac1fa8dc"
+                "reference": "07c159cd61f6fad3ded2093935ab1b37b025a616"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/972ee075f6cade3113d9625a857c5883ac1fa8dc",
-                "reference": "972ee075f6cade3113d9625a857c5883ac1fa8dc",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/07c159cd61f6fad3ded2093935ab1b37b025a616",
+                "reference": "07c159cd61f6fad3ded2093935ab1b37b025a616",
                 "shasum": ""
             },
             "require": {
@@ -598,7 +603,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2013-12-05 06:34:18"
+            "time": "2013-12-20 08:08:00"
         },
         {
             "name": "silverstripe/widgets",
@@ -714,7 +719,7 @@
             ],
             "authors": [
                 {
-                    "name": "Aaron Carlino",
+                    "name": "Uncle Cheese",
                     "email": "unclecheese@leftandmain.com",
                     "homepage": "http://leftandmain.com"
                 }
