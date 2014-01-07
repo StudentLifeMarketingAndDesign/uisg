@@ -163,12 +163,11 @@ table.meetings th {
 }
 .initiatives-list li {
 	@include rem(15);
-	margin-bottom: 1em;
+	margin: 3px;
 	vertical-align: top;
 	text-align: left;
 	@media screen and (min-width: $break-small) {
-		display: inline-block;
-		
+		float: left;
 		width: 49%;
 		padding: 0;
 	}

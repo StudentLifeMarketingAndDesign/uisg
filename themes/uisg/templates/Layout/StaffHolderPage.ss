@@ -2,6 +2,7 @@
 <div class="staff-container">
 <div class="container clearfix">
       <section class="staff-content">
+            <h1>$Title</h1>
       	$Form
       	$Content
       	<% loop Teams %>
