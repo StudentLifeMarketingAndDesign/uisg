@@ -1,5 +1,4 @@
 $(window).load(function() {
-	console.log("I'm working");
 
 	var $meetings = $(".main-content table");
 	$meetings.attr('id', function (index) {
@@ -12,7 +11,6 @@ $(window).load(function() {
 	});
 	
 	var general = $("#meeting-0 .table-page").size();
-	console.log(general);
 	
 	var generalMore = 3
 
@@ -21,8 +19,11 @@ $(window).load(function() {
 		$('#meeting-0 .table-start').show();
 		$('#showMore-0').append("<button type='button' class='page-button'>Show More...</button");
 		$('.page-button').on("click", function() {
-			$('#meeting-0 .table-page:lt(' + generalMore + ')').show();
+			$('#meeting-0 .table-page:lt(' + generalMore + ')').show("easing");
 			generalMore++;
+			if (generalMore > general) {
+				$('#showMore-0').hide();
+			}
 		});
 		
 	}	
@@ -36,8 +37,11 @@ $(window).load(function() {
 		$('#meeting-1 .table-start').show();
 		$('#showMore-1').append("<button type='button' class='page-button'>Show More...</button");
 		$('.page-button').on("click", function() {
-			$('#meeting-1 .table-page:lt(' + committeeMore + ')').show();
+			$('#meeting-1 .table-page:lt(' + committeeMore + ')').show("easing");
 			committeeMore++;
+			if (committeeMore > committee) {
+				$('#showMore-1').hide();
+			}
 		});
 		
 	}	
