@@ -72,12 +72,13 @@
           </div>
           <div class="module latest-post">
             <div class="inner">
-              <h3>Latest Post</h3>
+              <h3>Latest Posts</h3>
               <% with $Page("news") %>
-                <% loop Entries("1") %>
-                  <h4>$Title</h4>
-                  $Content.Summary(50)
-                  <a href="#" target="_blank" class="hero-link">Read More</a>
+                <% loop Entries(5) %>
+                <article>
+                  <h4><a href="$Link">$Title</a></h4>
+                </article>
+                <hr />
                 <% end_loop %>
               <% end_with %>
             </div>
