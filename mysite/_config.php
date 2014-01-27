@@ -26,7 +26,7 @@ FulltextSearchable::enable();
 if (class_exists('SiteTree')) SiteTree::enable_nested_urls();
 DataObject::add_extension('StaffTeam', 'StaffTeamExtension');
 HomePage::add_extension('HomePageExtension');
-SiteConfig::add_extension('SiteConfigExtension');
+
 
 Security::setDefaultAdmin('admin','password');
 
