@@ -74,9 +74,12 @@
             <div class="inner">
               <h3>Latest Posts</h3>
               <% with $Page("news") %>
-                <% loop Entries(5) %>
+                <% loop Entries(3) %>
                 <article>
                   <h4><a href="$Link">$Title</a></h4>
+                 	 <p>$Content.LimitCharacters(60) <a href="$Link" title="Read more on &quot;{$Title}&quot;">Continue Reading</a></p>
+                 	 
+     
                 </article>
                 <hr />
                 <% end_loop %>

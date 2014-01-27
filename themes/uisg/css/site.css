@@ -175,7 +175,7 @@ aside .mod h3 {
 
 /* line 76, ../scss/site.scss */
 tr.odd {
-  background: #ededed;
+  background: #FFFFFF;
 }
 
 /* line 81, ../scss/site.scss */
@@ -186,7 +186,7 @@ td.name {
 
 /* line 86, ../scss/site.scss */
 tr.even {
-  background: #dedede;
+  background: #F0F0F0;
 }
 
 /* line 90, ../scss/site.scss */
@@ -450,4 +450,13 @@ table.meetings th {
   padding: 0;
   background: none;
   border: none;
+}
+
+/*Button*/
+/* line 308, ../scss/site.scss */
+.page-button {
+  font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: none;
+  border: 1px solid #ddd;
+  padding: 10px;
 }

@@ -74,7 +74,7 @@ aside .mod h3 {
 }
 
 tr.odd {
-	background:#ededed;
+	background:#FFFFFF;
 }
 
 
@@ -84,7 +84,7 @@ td.name{
 }
 
 tr.even{
-	background:#dedede;
+	background:#F0F0F0;
 }
 
 tr {
@@ -302,4 +302,12 @@ table.meetings th {
 	border: none;
 
 
+}
+/*Button*/
+
+.page-button {
+	font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background: none;
+	border: 1px solid #ddd; 
+	padding: 10px; 
 }
