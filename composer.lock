@@ -53,12 +53,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "53c31d1c216b64c1da999d5d25a97fcbf6810515"
+                "reference": "36d49c77a376b8f02ad79be31787be1f9c7b9717"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/53c31d1c216b64c1da999d5d25a97fcbf6810515",
-                "reference": "53c31d1c216b64c1da999d5d25a97fcbf6810515",
+                "url": "https://api.github.com/repos/composer/installers/zipball/36d49c77a376b8f02ad79be31787be1f9c7b9717",
+                "reference": "36d49c77a376b8f02ad79be31787be1f9c7b9717",
                 "shasum": ""
             },
             "replace": {
@@ -88,20 +88,22 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "http://dontkry.com",
+                    "homepage": "https://github.com/shama",
                     "role": "Developer"
                 }
             ],
             "description": "A multi-framework Composer library installer",
             "homepage": "http://composer.github.com/installers/",
             "keywords": [
-                "TYPO3 CMS",
-                "TYPO3 Flow",
-                "TYPO3 Neos",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
                 "agl",
+                "annotatecms",
                 "cakephp",
                 "codeigniter",
                 "concrete5",
+                "croogo",
                 "drupal",
                 "elgg",
                 "fuelphp",
@@ -109,19 +111,23 @@
                 "joomla",
                 "kohana",
                 "laravel",
-                "li3",
                 "lithium",
+                "magento",
                 "mako",
+                "mediawiki",
                 "modulework",
                 "phpbb",
                 "piwik",
                 "ppi",
+                "shopware",
                 "silverstripe",
                 "symfony",
+                "typo3",
                 "wordpress",
-                "zend"
+                "zend",
+                "zikula"
             ],
-            "time": "2014-01-14 16:42:06"
+            "time": "2014-01-27 15:25:08"
         },
         {
             "name": "md/division-bar",
@@ -129,12 +135,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar.git",
-                "reference": "084e09eb0f38c06893bafef2d72a0bc112ea110e"
+                "reference": "a2b7d4254e3fccabbad539d73fb8982813498876"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/084e09eb0f38c06893bafef2d72a0bc112ea110e",
-                "reference": "084e09eb0f38c06893bafef2d72a0bc112ea110e",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/a2b7d4254e3fccabbad539d73fb8982813498876",
+                "reference": "a2b7d4254e3fccabbad539d73fb8982813498876",
                 "shasum": ""
             },
             "require": {
@@ -153,7 +159,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-bar/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-bar/issues"
             },
-            "time": "2013-11-21 20:11:30"
+            "time": "2014-01-27 19:58:19"
         },
         {
             "name": "md/division-project",
@@ -161,17 +167,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "e9f25597935161e0f2085b36947983785b033b74"
+                "reference": "00ebf3c778b133e97125654948fcc38cb4023699"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/e9f25597935161e0f2085b36947983785b033b74",
-                "reference": "e9f25597935161e0f2085b36947983785b033b74",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/00ebf3c778b133e97125654948fcc38cb4023699",
+                "reference": "00ebf3c778b133e97125654948fcc38cb4023699",
                 "shasum": ""
             },
             "require": {
                 "colymba/gridfield-bulk-editing-tools": "*",
-                "md/division-bar": "dev-master",
+                "md/division-bar": "*",
                 "php": ">=5.3.2",
                 "silverstripe-themes/simple": "*",
                 "silverstripe/blog": "*",
@@ -200,7 +206,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2014-01-15 15:31:09"
+            "time": "2014-01-27 22:32:07"
         },
         {
             "name": "silverstripe-themes/simple",
@@ -765,7 +771,7 @@
             ],
             "authors": [
                 {
-                    "name": "Uncle Cheese",
+                    "name": "Aaron Carlino",
                     "email": "unclecheese@leftandmain.com",
                     "homepage": "http://leftandmain.com"
                 }
@@ -784,12 +790,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-event-calendar.git",
-                "reference": "ee160a8628645efa8c93ad05cbcacfd6d270e2ef"
+                "reference": "7bebe3cfcdd0a9c832b31f008e97397498f9b16d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-event-calendar/zipball/ee160a8628645efa8c93ad05cbcacfd6d270e2ef",
-                "reference": "ee160a8628645efa8c93ad05cbcacfd6d270e2ef",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-event-calendar/zipball/7bebe3cfcdd0a9c832b31f008e97397498f9b16d",
+                "reference": "7bebe3cfcdd0a9c832b31f008e97397498f9b16d",
                 "shasum": ""
             },
             "require": {
@@ -819,7 +825,7 @@
                 "events",
                 "silverstripe"
             ],
-            "time": "2013-12-10 20:15:18"
+            "time": "2014-01-25 23:57:35"
         },
         {
             "name": "undefinedoffset/sortablegridfield",
@@ -827,12 +833,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/UndefinedOffset/SortableGridField.git",
-                "reference": "c59ec68690dcd6eeb03704aae96d4f17c9e5a293"
+                "reference": "1e24d1e888890e70ac006059838ec828b5cfd5c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/c59ec68690dcd6eeb03704aae96d4f17c9e5a293",
-                "reference": "c59ec68690dcd6eeb03704aae96d4f17c9e5a293",
+                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/1e24d1e888890e70ac006059838ec828b5cfd5c6",
+                "reference": "1e24d1e888890e70ac006059838ec828b5cfd5c6",
                 "shasum": ""
             },
             "require": {
@@ -859,7 +865,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2014-01-22 19:40:36"
+            "time": "2014-01-27 21:04:32"
         }
     ],
     "packages-dev": [
