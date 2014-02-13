@@ -84,7 +84,7 @@ td.name{
 }
 
 tr.even{
-	background:#F0F0F0;
+
 }
 
 tr {
@@ -114,6 +114,21 @@ table.meetings{
 table.meetings th {
 	font-size: 1.3em;
 	color: #333;
+	border-top: none;
+}
+
+table.meetings a{
+	display: inline-block;
+}
+
+.button:hover {
+	background: #ebebeb;
+	text-decoration: none;
+}
+
+.button {
+	background: #f0f0f0;
+	padding: 4px;
 }
 
 
@@ -300,9 +315,15 @@ table.meetings th {
 	padding: 0;
 	background: none;
 	border: none;
+}
 
+/*Sidebar Contact Form Styles */
+
+.side-contact {
+	margin-left: 10px;
 
 }
+
 /*Button*/
 
 .page-button {

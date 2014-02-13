@@ -1,11 +1,12 @@
-<div class="bg">
-<div class="staff-container">
-<div class="container clearfix">
-      <section class="staff-content">
-            <h1>$Title</h1>
-      	$Form
-      	$Content
-      	<% loop Teams %>
+
+<div class="gradient">
+      <div class="container clearfix">
+            <div class="white-cover"></div>
+          <section class="main-content">
+<h1>$Title</h1>
+            $Form
+            $Content
+            <% loop Teams %>
                   <h2 class="staff-title">$Title</h2>
                   <% if $GroupImage %>
                         <img src="$GroupImage.URL" alt="Group Photo of $Title" class="group-image" />
@@ -23,10 +24,11 @@
                         <li class="filler"></li>
                   </ul>
                   
-      	<% end_loop %>
-      	
-      </section>
-</div>
-</div>
+            <% end_loop %>
+          </section>
+          <section class="sec-content hide-print">
+            <% include SideContact %>
+          </section>
+      </div>
 </div>
 <%-- <% include TopicsAndNews %> --%>
