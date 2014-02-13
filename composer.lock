@@ -53,12 +53,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "35a07647186a910b725fca9290b13ca2e265491a"
+                "reference": "9a1fd4e191beaa5cab79c05f923d8bcdd01b4e94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/35a07647186a910b725fca9290b13ca2e265491a",
-                "reference": "35a07647186a910b725fca9290b13ca2e265491a",
+                "url": "https://api.github.com/repos/composer/installers/zipball/9a1fd4e191beaa5cab79c05f923d8bcdd01b4e94",
+                "reference": "9a1fd4e191beaa5cab79c05f923d8bcdd01b4e94",
                 "shasum": ""
             },
             "replace": {
@@ -88,7 +88,7 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "http://dontkry.com",
+                    "homepage": "https://github.com/shama",
                     "role": "Developer"
                 }
             ],
@@ -128,7 +128,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-01-31 16:53:31"
+            "time": "2014-02-12 21:21:55"
         },
         {
             "name": "md/division-bar",
@@ -168,12 +168,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "a4f7effdfd827f19138103c3230c144d92c1ed0a"
+                "reference": "4af9c3babb97cc3a22b4ed60cf0659be8a77909c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/a4f7effdfd827f19138103c3230c144d92c1ed0a",
-                "reference": "a4f7effdfd827f19138103c3230c144d92c1ed0a",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/4af9c3babb97cc3a22b4ed60cf0659be8a77909c",
+                "reference": "4af9c3babb97cc3a22b4ed60cf0659be8a77909c",
                 "shasum": ""
             },
             "require": {
@@ -207,7 +207,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2014-02-11 16:08:27"
+            "time": "2014-02-13 16:50:32"
         },
         {
             "name": "silverstripe-themes/simple",
@@ -383,12 +383,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-dashboard.git",
-                "reference": "e0abe231d988bf1605c76f7d37221400e32be77b"
+                "reference": "295bdc0d841a5c853750398073a0b4d554a4d2b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-dashboard/zipball/e0abe231d988bf1605c76f7d37221400e32be77b",
-                "reference": "e0abe231d988bf1605c76f7d37221400e32be77b",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-dashboard/zipball/295bdc0d841a5c853750398073a0b4d554a4d2b9",
+                "reference": "295bdc0d841a5c853750398073a0b4d554a4d2b9",
                 "shasum": ""
             },
             "require": {
@@ -420,7 +420,7 @@
                 "module",
                 "silverstripe"
             ],
-            "time": "2014-02-04 07:00:05"
+            "time": "2014-02-11 09:06:17"
         },
         {
             "name": "silverstripe/framework",
@@ -512,12 +512,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chillu/silverstripe-recaptcha.git",
-                "reference": "13f24e9b9d25f97154739c2b012ecd3ae17f4b81"
+                "reference": "ee4d4c879c2852dbc913ed2d069f20a7bdd2a1c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chillu/silverstripe-recaptcha/zipball/13f24e9b9d25f97154739c2b012ecd3ae17f4b81",
-                "reference": "13f24e9b9d25f97154739c2b012ecd3ae17f4b81",
+                "url": "https://api.github.com/repos/chillu/silverstripe-recaptcha/zipball/ee4d4c879c2852dbc913ed2d069f20a7bdd2a1c1",
+                "reference": "ee4d4c879c2852dbc913ed2d069f20a7bdd2a1c1",
                 "shasum": ""
             },
             "require": {
@@ -544,7 +544,7 @@
                 "silverstripe",
                 "spamprotection"
             ],
-            "time": "2013-12-19 19:18:36"
+            "time": "2014-02-11 20:50:00"
         },
         {
             "name": "silverstripe/spamprotection",
