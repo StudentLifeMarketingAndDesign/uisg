@@ -362,7 +362,12 @@ table.meetings a {
 }
 
 /* Staff Page */
-/* line 233, ../scss/site.scss */
+/* line 231, ../scss/site.scss */
+.staff-list {
+  margin-top: 20px;
+}
+
+/* line 235, ../scss/site.scss */
 .NoLogo {
   position: absolute;
   font-family: "proxima-nova-condensed", sans-serif;
@@ -378,7 +383,7 @@ table.meetings a {
   width: 100%;
 }
 @media screen and (min-width: 480px) {
-  /* line 233, ../scss/site.scss */
+  /* line 235, ../scss/site.scss */
   .NoLogo {
     padding-top: 21%;
     font-size: 1.2rem;
@@ -386,13 +391,13 @@ table.meetings a {
   }
 }
 @media screen and (min-width: 586px) {
-  /* line 233, ../scss/site.scss */
+  /* line 235, ../scss/site.scss */
   .NoLogo {
     font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 1132px) {
-  /* line 233, ../scss/site.scss */
+  /* line 235, ../scss/site.scss */
   .NoLogo {
     padding-left: .4em;
     padding-right: .4em;
@@ -401,14 +406,14 @@ table.meetings a {
   }
 }
 
-/* line 262, ../scss/site.scss */
+/* line 264, ../scss/site.scss */
 .main-content.initiatives {
   padding: 0;
   margin: 0;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 267, ../scss/site.scss */
+  /* line 269, ../scss/site.scss */
   .initiatives-content {
     background: #fff;
     border-right: 1px solid #ddd;
@@ -420,7 +425,7 @@ table.meetings a {
 }
 
 /* HomePage Twitter Feed */
-/* line 280, ../scss/site.scss */
+/* line 282, ../scss/site.scss */
 .module.twitter {
   border: none;
   box-shadow: none;
@@ -430,34 +435,34 @@ table.meetings a {
   background: none;
 }
 
-/* line 289, ../scss/site.scss */
+/* line 291, ../scss/site.scss */
 .module.facebook * {
   width: 100%;
 }
 
-/* line 293, ../scss/site.scss */
+/* line 295, ../scss/site.scss */
 .module.facebook {
   border-top: 4px solid #ffce39;
 }
 
-/* line 297, ../scss/site.scss */
+/* line 299, ../scss/site.scss */
 .module.question-box .inner {
   border-top: 4px solid #ffce39;
 }
 
-/* line 301, ../scss/site.scss */
+/* line 303, ../scss/site.scss */
 .module.latest-post .inner {
   border-top: 4px solid #ffce39;
 }
 
-/* line 306, ../scss/site.scss */
+/* line 308, ../scss/site.scss */
 .twitter-timeline {
   min-width: 100%;
   display: block;
 }
 
 /* HomePage Contact Form Styles */
-/* line 313, ../scss/site.scss */
+/* line 315, ../scss/site.scss */
 #Form_ContactForm .Actions {
   margin: 0;
   padding: 0;
@@ -466,13 +471,13 @@ table.meetings a {
 }
 
 /*Sidebar Contact Form Styles */
-/* line 322, ../scss/site.scss */
+/* line 324, ../scss/site.scss */
 .side-contact {
   margin-left: 10px;
 }
 
 /*Button*/
-/* line 329, ../scss/site.scss */
+/* line 331, ../scss/site.scss */
 .page-button {
   font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background: none;
