@@ -9,7 +9,7 @@
             <% loop Teams %>
                   <h2 class="staff-title">$Title</h2>
                   <% if $GroupImage %>
-                        <img src="$GroupImage.SetWidth(600).URL" alt="Group Photo of $Title" class="group-image" />
+                        <img src="$GroupImage.SetWidth(800).URL" alt="Group Photo of $Title" class="group-image" />
                   <% end_if %>
                   <ul class="staff-list">
                   <% loop $SortedStaffPages %>
