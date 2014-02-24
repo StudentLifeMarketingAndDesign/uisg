@@ -3,16 +3,11 @@
 global $project;
 $project = 'mysite';
 
-global $databaseConfig;
-$databaseConfig = array(
-	"type" => 'MySQLDatabase',
-	"server" => 'localhost',
-	"username" => 'root',
-	"password" => 'omega',
-	"database" => 'uisg',
-	"path" => '',
-);
-
+global $database;
+$database = 'uisg';
+ 
+// Use _ss_environment.php file for configuration
+require_once("conf/ConfigureFromEnv.php");
 MySQLDatabase::set_connection_charset('utf8');
 
 // Set the current theme. More themes can be downloaded from
@@ -26,9 +21,3 @@ FulltextSearchable::enable();
 if (class_exists('SiteTree')) SiteTree::enable_nested_urls();
 DataObject::add_extension('StaffTeam', 'StaffTeamExtension');
 HomePage::add_extension('HomePageExtension');
-
-
-Security::setDefaultAdmin('admin','password');
-
-Director::set_environment_type("dev");
-
