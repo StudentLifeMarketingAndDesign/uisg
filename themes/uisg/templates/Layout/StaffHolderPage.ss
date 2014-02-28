@@ -24,7 +24,11 @@
                               </a>
                               <% end_if %>
                               <p class="staff-name">
-                                    <a href="$Link">$FirstName $LastName</a>
+                              		<% if $FirstName %>
+                              			<a href="$Link">$FirstName $LastName</a>
+                              		<% else %>
+                                    	<a href="$Link">$Title</a>
+                                    <% end_if %> 
                                     <% if $Position %><small class="staff-position">$Position</small><% end_if %>
                               </p>
                         </li>
