@@ -5,11 +5,11 @@
 	    	$Form
 	    	<% if $MainImage %>
 			<div>
-			$MainImage
+			<img src="$MainImage.URL" alt="$Title" />
 			</div>
 			<% end_if %>
 	    	<% if not $HideTextTitle %>
-	    		<h1> $Title </h1>
+	    		<h1>$Title</h1>
 	    	<% end_if %>
 	    	$Content
 	    </section>
