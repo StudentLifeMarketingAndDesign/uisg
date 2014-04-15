@@ -10,7 +10,7 @@
             $Breadcrumbs
             <article>    
                 <% if $Image %>
-                    <img src="$Image.CroppedImage(765,512).URL" alt="">
+                    <img src="$Image.CroppedImage(765,512).URL" alt="$Title story by $author">
                 <% end_if %>
                 	<h1>$Title</h1>
 
