@@ -14,6 +14,11 @@ class InitiativeHolder_Controller extends Page_Controller {
 	public function init() {
 		parent::init();
 	}
+
+	public function Initiatives(){
+		$initiatives = InitiativePage::get()->sort('RAND()');
+		return $initiatives;
+	}
 }
 
 ?>
