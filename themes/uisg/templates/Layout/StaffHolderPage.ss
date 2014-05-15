@@ -41,6 +41,7 @@
           </section>
           <section class="sec-content hide-print">
             <% include SideContact %>
+            <% include SideNav %>
           </section>
       </div>
 </div>
