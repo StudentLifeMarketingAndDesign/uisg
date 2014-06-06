@@ -11,7 +11,7 @@
 	    	$Form
 	    	$Content
 			<ul class="initiatives-list">
-                  <% loop $Children %>
+                  <% loop $Initiatives %>
                         <li>
                               <% if $MainImage %>
                               <a href="$Link" class="initiatives-link">

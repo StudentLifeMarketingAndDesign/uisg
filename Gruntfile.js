@@ -1,62 +1,65 @@
 module.exports = function(grunt) {
 
+  var globalConfig = {
+    themeDir: 'themes/uisg'
+  };
+
   // Project configuration.
   grunt.initConfig({
 
+    globalConfig: globalConfig,
     pkg: grunt.file.readJSON('package.json'),
-
-    concat: {
-      dist: {
-        src: [
-          'themes/uisg/js/plugins/*.js',
-          'themes/uisg/js/main.js'
-        ],
-        dest: 'themes/uisg/js/build/main.js'
-      }
-    },
-
-    uglify: {
-      build: {
-        src: ['themes/uisg/js/build/main.js'],
-        dest: 'themes/uisg/js/build/main.min.js'
-      }
-    },
+    
+    //compile the sass
 
     sass: {
-      dist: {
-        options: {
-          style: 'compressed'
-        },
+      dist: { 
         files: {
-          'themes/uisg/css/site.css': 'themes/uisg/scss/site.scss',
+          '<%=globalConfig.themeDir %>/css/master.css' : '<%=globalConfig.themeDir %>/scss/master.scss'
+        },                  // Target
+        options: {              // Target options
+          style: 'compressed',
+          sourcemap: 'true',
+          loadPath: ['division-project/scss']
         }
       }
     },
 
-    imagemin: {
-      dynamic: {
-        files: [{
-          expand: true,
-          cwd: 'themes/uisg/images/',
-          src: ['**/*.{png,jpg,gif}'],
-          dest: 'themes/uisg/images/'
-        }]
+    //concat all the files into the build folder
+
+    concat: {
+      js:{
+        src: ['<%=globalConfig.themeDir %>/js/*.js', 'division-project/js/*.js'],
+        dest: '<%=globalConfig.themeDir %>/build/src/main_concat.js'
       }
     },
 
+    //minify those concated files
+    //toggle mangle to leave variable names intact
+
+    uglify: {
+      options: {
+        mangle: true
+      },
+      my_target:{
+        files:{
+        '<%=globalConfig.themeDir %>/build/build.js': ['<%=globalConfig.themeDir %>/build/src/main_concat.js'],
+        }
+      }
+    },
     watch: {
       scripts: {
-        files: ['themes/uisg/js/*.js', 'themes/uisg/js/**/*.js'],
+        files: ['<%=globalConfig.themeDir %>/js/*.js', '<%=globalConfig.themeDir %>/js/**/*.js'],
         tasks: ['concat', 'uglify'],
         options: {
-          spawn: false,
+          spawn: true,
         }
       },
       css: {
-        files: ['themes/uisg/scss/*.scss', 'themes/uisg/scss/**/*.scss'],
+        files: ['<%=globalConfig.themeDir %>/scss/*.scss', '<%=globalConfig.themeDir %>/scss/**/*.scss', 'division-project/scss/*.scss','division-project/scss/**/*.scss'],
         tasks: ['sass'],
         options: {
-          spawn: false,
+          spawn: true,
         }
       }
     },
@@ -67,11 +70,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-simple-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['concat', 'uglify', 'sass' , 'simple-watch']);
+  // Note: order of tasks is very important
+  grunt.registerTask('default', ['sass', 'concat', 'uglify', 'watch']);
 
 };

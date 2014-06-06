@@ -17,7 +17,7 @@ $(window).load(function() {
 	if (general > 1) {
 		$('#meeting-0 .table-page').hide();
 		$('#meeting-0 .table-start').show();
-		$('#showMore-0').append("<button type='button' class='page-button'>Show More...</button");
+		$('#showMore-0').append("<button type='button' class='page-button'>Show More</button");
 		$('.page-button').on("click", function() {
 			$('#meeting-0 .table-page:lt(' + generalMore + ')').show("easing");
 			generalMore++;
@@ -34,7 +34,7 @@ $(window).load(function() {
 	if (committee > 1) {
 		$('#meeting-1 .table-page').hide();
 		$('#meeting-1 .table-start').show();
-		$('#showMore-1').append("<button type='button' class='page-button'>Show More...</button");
+		$('#showMore-1').append("<button type='button' class='page-button'>Show More</button");
 		$('.page-button').on("click", function() {
 			$('#meeting-1 .table-page:lt(' + committeeMore + ')').show("easing");
 			committeeMore++;

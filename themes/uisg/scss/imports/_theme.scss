@@ -11,6 +11,7 @@ body {
 /* Nav Overrides */
 
 .header{
+	background-color: #2D2D2D; /* for older browsers */
 	background-color: rgba(29, 29, 29, 0.55);
 }
 
@@ -37,6 +38,10 @@ body {
 
 .mod h3 {
 	color: white;
+}
+
+aside .mod h3 {
+	color: #333;
 }
 
 
@@ -70,7 +75,7 @@ body {
 }
 
 tr.odd {
-	background:#ededed;
+	background:#FFFFFF;
 }
 
 
@@ -80,7 +85,7 @@ td.name{
 }
 
 tr.even{
-	background:#dedede;
+
 }
 
 tr {
@@ -110,6 +115,21 @@ table.meetings{
 table.meetings th {
 	font-size: 1.3em;
 	color: #333;
+	border-top: none;
+}
+
+table.meetings a{
+	display: inline-block;
+}
+
+.button:hover {
+	background: #ebebeb;
+	text-decoration: none;
+}
+
+.button {
+	background: #f0f0f0;
+	padding: 4px;
 }
 
 
@@ -209,7 +229,9 @@ table.meetings th {
 }
 /* Staff Page */
 
-
+.staff-list {
+	margin-top: 20px
+}
 
 .NoLogo {
 		position: absolute;
@@ -296,6 +318,20 @@ table.meetings th {
 	padding: 0;
 	background: none;
 	border: none;
+}
 
+/*Sidebar Contact Form Styles */
 
+.side-contact {
+	margin-left: 10px;
+
+}
+
+/*Button*/
+
+.page-button {
+	font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background: none;
+	border: 1px solid #ddd; 
+	padding: 10px; 
 }

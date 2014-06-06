@@ -22,16 +22,16 @@
 <div class="hero">
         <div class="container clearfix">
 
-        <% if HomePageHeroFeatures.limit(2) %>
+        <% if HomePageHeroFeatures.Limit(2) %>
             <div class="hero-article-wrapper">
 
-                <% loop HomePageHeroFeatures %>
+                <% loop HomePageHeroFeatures.Limit(2) %>
                 <div class="hero-article clearfix">
                     <% if $Image %>
                     	<% if $UseExternalLink %>
-                    		<a href="$ExternalLink" target="_blank"><img src="$Image.URL" alt=""></a>
+                    		<a href="$ExternalLink" target="_blank"><img src="$Image.URL" alt="$Image"></a>
                     	<% else %>
-                        	<a href="$AssociatedPage.Link"><img src="$Image.URL" alt=""></a>
+                        	<a href="$AssociatedPage.Link"><img src="$Image.URL" alt="$title"></a>
                         <% end_if %>
                     <% end_if %>
                     <h3 class="hero-title">
@@ -72,12 +72,16 @@
           </div>
           <div class="module latest-post">
             <div class="inner">
-              <h3>Latest Post</h3>
+              <h3>Latest Posts</h3>
               <% with $Page("news") %>
-                <% loop Entries("1") %>
-                  <h4>$Title</h4>
-                  $Content.Summary(50)
-                  <a href="#" target="_blank" class="hero-link">Read More</a>
+                <% loop Entries(3) %>
+                <article>
+                  <h4><a href="$Link">$Title</a></h4>
+                 	 <p>$Content.LimitCharacters(60) <a href="$Link" title="Read more on &quot;{$Title}&quot;">Continue Reading</a></p>
+                 	 
+     
+                </article>
+                <hr />
                 <% end_loop %>
               <% end_with %>
             </div>

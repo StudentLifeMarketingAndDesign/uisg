@@ -21,20 +21,20 @@
 					        <tbody class="table-page">
 						  <% end_if %>
 						<tr class="$EvenOdd">
-						<td><a href="$Link">$Date.Format("F d, Y") $Time</a>
+						<td><a href="$Link" class="button">$Date.Format("F d, Y") $Time</a>
 						</td>
-						<td>
+						<td class="documents">
 							<% if Agenda %>
-								<a href="$Agenda.URL">Agenda</a>, 
+								<a href="$Agenda.URL" class="button">Agenda <img src="$Agenda.Icon" /></a>
 							<% end_if %>
 							<% if MeetingNotes %>
-								<a href="$MeetingNotes.URL">Meeting Minutes</a>, 
+								<a href="$MeetingNotes.URL" class="button">Meeting Minutes <img src="$MeetingNotes.Icon"/></a> 
 							<% end_if %>
 							<% if Legislation1 %>
-								<a href="$Legislation1.URL">Legislation 1</a>, 
+								<a href="$Legislation1.URL" class="button">Legislation 1 <img src="$Legislation1.Icon" alt ="Legislation Icon" /></a>
 							<% end_if %>
 							<% if Legislation2 %>
-								<a href="$Legislation2.URL">Legislation 2</a>
+								<a href="$Legislation2.URL" class="button">Legislation 2 <img src="$Legislation2.Icon" alt ="Legislation Icon"/></a>
 							<% end_if %>			
 						</td>
 					</tr>
@@ -45,6 +45,7 @@
 			<% end_loop %>
 	    </section>
 	    <section class="sec-content hide-print">
+	    	<% include SideContact %>
 	    	<% include SideNav %>
 	    </section>
 	</div>
