@@ -2,7 +2,7 @@
 <div class="gradient">
       <div class="container clearfix">
             <div class="white-cover"></div>
-          <section class="main-content">
+          <section class="main-content staff-content">
 <h1>$Title</h1>
             $Form
             $Content
