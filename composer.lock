@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/colymba/GridFieldBulkEditingTools.git",
-                "reference": "1fefcad1e37ac4d2d7f3f3c3d4d9210dc402d260"
+                "reference": "de7be9d8af4b658381e2ec58377c99e4e36b45f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/1fefcad1e37ac4d2d7f3f3c3d4d9210dc402d260",
-                "reference": "1fefcad1e37ac4d2d7f3f3c3d4d9210dc402d260",
+                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/de7be9d8af4b658381e2ec58377c99e4e36b45f2",
+                "reference": "de7be9d8af4b658381e2ec58377c99e4e36b45f2",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
                 "gridfield bulk upload",
                 "silverstripe"
             ],
-            "time": "2014-05-14 12:46:45"
+            "time": "2014-05-19 05:56:26"
         },
         {
             "name": "composer/installers",
@@ -668,12 +668,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "bce1da2d7184c3371718919eb31ecd6b05da5cac"
+                "reference": "7a77cfbbb4b685dfba81cef4ffdfdb997859cbfc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/bce1da2d7184c3371718919eb31ecd6b05da5cac",
-                "reference": "bce1da2d7184c3371718919eb31ecd6b05da5cac",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/7a77cfbbb4b685dfba81cef4ffdfdb997859cbfc",
+                "reference": "7a77cfbbb4b685dfba81cef4ffdfdb997859cbfc",
                 "shasum": ""
             },
             "require": {
@@ -697,7 +697,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2014-05-15 09:16:24"
+            "time": "2014-05-20 02:36:54"
         },
         {
             "name": "silverstripe/widgets",
