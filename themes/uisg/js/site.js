@@ -24,8 +24,7 @@ $(window).load(function() {
 			if (generalMore > general) {
 				$('#showMore-0').hide();
 			}
-		});
-		
+		});	
 	}	
 	
 	var committee = $("#meeting-1 .table-page").size();
@@ -42,10 +41,8 @@ $(window).load(function() {
 			if (committeeMore > committee) {
 				$('#showMore-1').hide();
 			}
-		});
-		
-	}	
-	
+		});	
+	}		
 })
 	
 

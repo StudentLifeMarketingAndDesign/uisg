@@ -4,7 +4,8 @@
 	"require": {
 		"php": ">=5.3.2",
 		"md/division-project": "dev-master",
-		"silverstripe/contact-form" : "*"
+		"silverstripe/contact-form" : "*",
+		"silverstripe/dashboard": "*"
 	},
 	"config": {
 		"process-timeout": 600	
