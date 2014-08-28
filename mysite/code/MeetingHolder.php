@@ -8,12 +8,8 @@ class MeetingHolder extends Page {
 	public function Meetings(){
 		$children = $this->Children();
 		
-		
-		$children->sort("Date",  "ASC");
-		
-		
 		if($children){
-			return $children;
+			return $children->sort("Date",  "DESC");
 		}
 		
 	}
