@@ -9,7 +9,7 @@ class MeetingHolder extends Page {
 		$children = $this->Children();
 		
 		
-		$children->sort("Date",  "DESC");
+		$children->sort("Date",  "ASC");
 		
 		
 		if($children){
