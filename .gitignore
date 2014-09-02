@@ -31,3 +31,5 @@ mathspamprotection/
 .sass-cache
 
 *.scssc
+
+ac-json-events/
