@@ -59,7 +59,7 @@
                 University of Iowa Student Government <br />
                 260B Iowa Memorial Union <br />
                 Phone: 319-335-3860 <br />
-                Email: uisg@uiowa.edu
+                Email: <a href="mailto:uisg@uiowa.edu">uisg@uiowa.edu</a>
             </div>
           </div>
           <div class="module latest-post">
