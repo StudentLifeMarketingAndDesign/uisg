@@ -54,7 +54,12 @@
           <div class="module question-box">
             <div class="inner">
               <h3>Questions or Comments for UISG?</h3>
-              $ContactForm
+                <a href="contact/" class="btn">View our contact form</a>
+                <hr />
+                University of Iowa Student Government <br />
+                260B Iowa Memorial Union <br />
+                Phone: 319-335-3860 <br />
+                Email: uisg@uiowa.edu
             </div>
           </div>
           <div class="module latest-post">

@@ -1,4 +1,5 @@
 	    	<div class="side-contact">
-		    	<h3>Want to contact UISG? Fill out the form below:</h3>
-		    	$ContactForm
+		    	<h3>Want to contact UISG?</h3>
+		    	<a href="contact/" class="btn">View our contact form</a>
+		    	
 	    	</div>

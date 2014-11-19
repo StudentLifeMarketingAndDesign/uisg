@@ -58,13 +58,17 @@ class Page_Controller extends ContentController {
 
 
 	public function ContactForm() {
-	  return ContactForm::create("ContactForm","uisg@uiowa.edu","You've received a new contact form!")
-	            ->addFields(
-	                TextField::create("Name","What is your name?"),
-	                EmailField::create("Email", "What is your email?")
-	            )
+
+		$nameField = TextField::create("Name","What is your name?");
+		$emailField = EmailField::create("Email", "What is your email?");
+		//$messageField = "Your message//Textarea";
+		$fields = array($nameField, $emailField);
+
+	  return ContactForm::create("ContactForm","quamsta@gmail.com","You've received a new contact form!")
+	            ->addFields($fields)
+	            ->setRequiredFields($fields)
 	            // You can add fields as strings, too.
-	            ->addField("Your message//Textarea")
+	            //->addField("Your message//Textarea")
 	            ->setSuccessMessage("Thanks for submitting the form!")
 	            ->setSuccessURL('thanks/')
 	            ->setOnBeforeSend(function($data, $form) {
