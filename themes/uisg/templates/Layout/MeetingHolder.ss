@@ -25,10 +25,10 @@
 						</td>
 						<td class="documents">
 							<% if Agenda %>
-								<a href="$Agenda.URL" class="button">Agenda <img src="$Agenda.Icon" /></a>
+								<a href="$Agenda.URL" class="button">Agenda <img src="$Agenda.Icon" alt="Agenda Icon"/></a>
 							<% end_if %>
 							<% if MeetingNotes %>
-								<a href="$MeetingNotes.URL" class="button">Meeting Minutes <img src="$MeetingNotes.Icon"/></a> 
+								<a href="$MeetingNotes.URL" class="button">Meeting Minutes <img src="$MeetingNotes.Icon" alt="Meeting Notes Icons"/></a> 
 							<% end_if %>
 							<% if Legislation1 %>
 								<a href="$Legislation1.URL" class="button">Legislation 1 <img src="$Legislation1.Icon" alt ="Legislation Icon" /></a>
