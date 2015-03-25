@@ -295,8 +295,15 @@ table.meetings a{
 
 .module.facebook {
 	border-top: 4px solid $yellow;
+	overflow: hidden;
+	iframe { width: 240px;
 
-	iframe { width: 240px !important}
+	}
+
+	@media screen and (min-width: $break-medium){
+		iframe {width: 100%;}
+	}
+
 }
 
 .module.question-box .inner {
