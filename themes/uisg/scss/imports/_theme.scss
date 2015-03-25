@@ -295,6 +295,8 @@ table.meetings a{
 
 .module.facebook {
 	border-top: 4px solid $yellow;
+
+	iframe { width: 240px !important}
 }
 
 .module.question-box .inner {

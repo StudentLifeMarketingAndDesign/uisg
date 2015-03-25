@@ -292,5 +292,6 @@ body{ background-color: rgb(41, 41, 41); background-image: url(../images/backgro
 .main-content.initiatives { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }
 .module.facebook *{ width: 100%; }
 .module.facebook{ border-top-width: 4px; border-top-style: solid; border-top-color: rgb(255, 206, 57); }
+.module.facebook iframe{ width: 240px !important; }
 .module.question-box .inner{ border-top-width: 4px; border-top-style: solid; border-top-color: rgb(255, 206, 57); }
 .module.latest-post .inner{ border-top-width: 4px; border-top-style: solid; border-top-color: rgb(255, 206, 57); }
