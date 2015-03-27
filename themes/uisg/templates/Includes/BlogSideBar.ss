@@ -2,8 +2,6 @@
 	<% include SideBarSearch %>
 	<div id="blog-sidebar">
 		$Parent.SideBarView
-		$SideBarView
-
 	</div>
 	<% if ClassName == 'BlogEntry' %><div class="mod"><p><a href="$BlogHolder.Link">View all entries</a></p></div><% end_if %>
 	  
