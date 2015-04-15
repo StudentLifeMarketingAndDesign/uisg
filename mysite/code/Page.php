@@ -2,31 +2,28 @@
 class Page extends SiteTree {
 
 	private static $db = array(
-		
+
 	);
 
 	private static $has_one = array(
 	);
 
-
-	private static $many_many = array (
+	private static $many_many = array(
 	);
 
-    private static $many_many_extraFields=array(
-      );
+	private static $many_many_extraFields = array(
+	);
 
-    private static $plural_name = "Pages";
+	private static $plural_name = "Pages";
 
-	private static $defaults = array ();
+	private static $defaults = array();
 
-
-	public function getCMSFields(){
+	public function getCMSFields() {
 		$f = parent::getCMSFields();
-		
+
 		return $f;
 	}
 
-	
 }
 class Page_Controller extends ContentController {
 
@@ -45,7 +42,7 @@ class Page_Controller extends ContentController {
 	 *
 	 * @var array
 	 */
-	private static $allowed_actions = array ( 'ContactForm'
+	private static $allowed_actions = array('ContactForm',
 	);
 
 	public function init() {
@@ -56,31 +53,30 @@ class Page_Controller extends ContentController {
 		// included so that our older themes still work
 	}
 
-
 	public function ContactForm() {
 
-		$nameField = TextField::create("Name","What is your name?");
+		$nameField = TextField::create("Name", "What is your name?");
 		$emailField = EmailField::create("Email", "What is your email?");
 		//$messageField = "Your message//Textarea";
 		$fields = array($nameField, $emailField);
 
-	  return ContactForm::create("ContactForm","quamsta@gmail.com","You've received a new contact form!")
-	            ->addFields($fields)
-	            ->setRequiredFields($fields)
-	            // You can add fields as strings, too.
-	            //->addField("Your message//Textarea")
-	            ->setSuccessMessage("Thanks for submitting the form!")
-	            ->setSuccessURL('thanks/')
-	            ->setOnBeforeSend(function($data, $form) {
-	                  // Do stuff here. Return false to refuse the form.
-	            })
-	            ->setEmailTemplate("ContactPageEmail")
-	            ->addOmittedField("SomeField")
-	            ->setIntroText("Someone submitted a form. Here's the data.")
-	            ->addSpamProtector(
-	                HoneyPotSpamProtector::create()
-	            )
-	            ->render();
+		return ContactForm::create("ContactForm", "uisg@uiowa.edu", "You've received a new contact form!")
+			->addFields($fields)
+			->setRequiredFields($fields)
+			// You can add fields as strings, too.
+			//->addField("Your message//Textarea")
+			->setSuccessMessage("Thanks for submitting the form!")
+			->setSuccessURL('thanks/')
+			->setOnBeforeSend(function ($data, $form) {
+				// Do stuff here. Return false to refuse the form.
+			})
+			->setEmailTemplate("ContactPageEmail")
+			->addOmittedField("SomeField")
+			->setIntroText("Someone submitted a form. Here's the data.")
+			->addSpamProtector(
+				HoneyPotSpamProtector::create()
+			)
+			->render();
 	}
-	
+
 }

@@ -16,7 +16,7 @@
                               <% if $MainImage %>
                               <a href="$Link" class="initiatives-link">
                                     
-                                    <img src="$MainImage.CroppedImage(350,234).URL" alt="$FirstName $LastName" class="initiatives-img">
+                                    <img src="$MainImage.CroppedImage(350,234).URL" alt="$Title" class="initiatives-img">
                               </a>
                               <% else %>
 	                          <a href="$Link" class="initiatives-link no-image"> 
