@@ -70,11 +70,10 @@
                 <article>
                   <h4><a href="$Link">$Title</a></h4>
                  	 <p>$Content.LimitCharacters(60) <a href="$Link" title="Read more on &quot;{$Title}&quot;">Continue Reading</a></p>
-                 	 
-     
                 </article>
                 <hr />
                 <% end_loop %>
+                <p><a href="$Link">View all news</a></p>
               <% end_with %>
             </div>
           </div>
