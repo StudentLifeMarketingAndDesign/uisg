@@ -227,11 +227,6 @@ table.meetings a{
 .initiatives-name {
 	margin: 0;
 }
-/* Staff Page */
-
-.staff-list {
-	margin-top: 20px
-}
 
 .NoLogo {
 		position: absolute;
@@ -278,6 +273,22 @@ table.meetings a{
 	}
 }
 
+/* Staff Page */
+
+.staff-list {
+	margin-top: 20px
+}
+.StaffPage img{
+	/* Vertically orientated staff photo */
+		@media screen and (min-width: $break-medium) {
+			max-width: 200px;
+			float:right;
+		}
+		@media screen and (min-width: $break-large) {
+			max-width: 300px;
+		}
+
+}
 /* HomePage Twitter Feed */
 
 .module.twitter {
