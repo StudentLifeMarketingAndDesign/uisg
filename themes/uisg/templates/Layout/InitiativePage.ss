@@ -2,10 +2,10 @@
 	<div class="container clearfix">
 		<div class="white-cover"></div>
 	    <section class="main-content <% if $BackgroundImage %>margin-top<% end_if %>">
-	    	$Form
+	    	$Breadcrumbs
 	    	<% if $MainImage %>
 			<div>
-			<img src="$MainImage.URL" alt="$Title" />
+			<img data-src="$MainImage.URL" src="<% include PlaceholderLargeSrc %>"alt="$Title" />
 			</div>
 			<% end_if %>
 	    	<% if not $HideTextTitle %>

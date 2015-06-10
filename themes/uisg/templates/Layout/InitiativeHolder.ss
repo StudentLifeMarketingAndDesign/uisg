@@ -16,12 +16,12 @@
                               <% if $MainImage %>
                               <a href="$Link" class="initiatives-link">
                                     
-                                    <img src="$MainImage.CroppedImage(350,234).URL" alt="$Title" class="initiatives-img">
+                                    <img data-src="$MainImage.CroppedImage(350,234).URL" alt="$Title" src="<% include PlaceholderLargeSrc %>" class="initiatives-img">
                               </a>
                               <% else %>
 	                          <a href="$Link" class="initiatives-link no-image"> 
 	                             	<p class="NoLogo">$Title</p>  
-	                             	<img src="{$ThemeDir}/images/no-image-initiative.jpg" alt="$Title" class="initiatives-img"> 
+	                             	<img data-src="{$ThemeDir}/images/no-image-initiative.jpg" alt="$Title" class="initiatives-img"> 
 			                          	 		 		
 	                             </a>
                               <% end_if %>
