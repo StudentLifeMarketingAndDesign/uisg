@@ -15,16 +15,16 @@
 		<h2>Meeting Documents</h2>
 		<p>
 		<% if Agenda %>
-			<a href="$Agenda.URL" class="button">Agenda <img src="$Agenda.Icon" /></a>
+			<a href="$Agenda.URL" class="btn">Agenda <img src="$Agenda.Icon" /></a>
 		<% end_if %>
 		<% if MeetingNotes %>
-			<a href="$MeetingNotes.URL" class="button">Meeting Minutes <img src="$MeetingNotes.Icon" alt ="Image representing a Downloadable Document" /></a>
+			<a href="$MeetingNotes.URL" class="btn">Meeting Minutes <img src="$MeetingNotes.Icon" alt ="Image representing a Downloadable Document" /></a>
 		<% end_if %>
 		<% if Legislation1 %>
-			<a href="$Legislation1.URL" class="button">Legislation 1 <img src="$Legislation1.Icon" alt= "Image representing a Downloadable Document"/></a>
+			<a href="$Legislation1.URL" class="btn">Legislation 1 <img src="$Legislation1.Icon" alt= "Image representing a Downloadable Document"/></a>
 		<% end_if %>
 		<% if Legislation2 %>
-			<a href="$Legislation2.URL" class="button">Legislation 2 <img src="$Legislation2.Icon" alt = "Image representing a Downloadable Document"/></a>
+			<a href="$Legislation2.URL" class="btn">Legislation 2 <img src="$Legislation2.Icon" alt = "Image representing a Downloadable Document"/></a>
 		<% end_if %>	
 	</p>
 	
