@@ -21,7 +21,7 @@
 					        <tbody class="table-page">
 						  <% end_if %>
 						<tr class="$EvenOdd">
-						<td><a href="$Link" class="btn">$Date.Format("F d, Y") $Time</a>
+						<td><a href="$Link">$Date.Format("F d, Y") $Time &rarr;</a>
 						</td>
 						<td class="documents">
 							<% if Agenda %>
