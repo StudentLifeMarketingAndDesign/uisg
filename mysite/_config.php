@@ -57,6 +57,6 @@ define("MAIL_FROM_ADDRESS", "uisg@uiowa.edu");
 
 
 if(Director::isLive()) {
-	Director::forceSSL(array('/^Security/','/^admin/'));
+	Director::forceSSL();
 }
 
