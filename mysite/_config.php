@@ -55,3 +55,8 @@ HtmlEditorConfig::get('cms')->setOption('paste_strip_class_attributes','true');
 GD::set_default_quality(80);
 define("MAIL_FROM_ADDRESS", "uisg@uiowa.edu");
 
+
+if(Director::isLive()) {
+	Director::forceSSL();
+}
+
