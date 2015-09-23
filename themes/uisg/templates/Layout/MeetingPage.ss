@@ -14,18 +14,22 @@
 
 		<h2>Meeting Documents</h2>
 		<p>
-		<% if Agenda %>
-			<a href="$Agenda.URL" class="btn">Agenda <img src="$Agenda.Icon" /></a>
+		<% if $Agenda || $MeetingNotes || $Legislation1 || $Legislation2 %>
+			<% if Agenda %>
+				<a href="$Agenda.URL" class="btn">Agenda <img src="$Agenda.Icon" /></a>
+			<% end_if %>
+			<% if MeetingNotes %>
+				<a href="$MeetingNotes.URL" class="btn">Meeting Minutes <img src="$MeetingNotes.Icon" alt ="Image representing a Downloadable Document" /></a>
+			<% end_if %>
+			<% if Legislation1 %>
+				<a href="$Legislation1.URL" class="btn">Legislation 1 <img src="$Legislation1.Icon" alt= "Image representing a Downloadable Document"/></a>
+			<% end_if %>
+			<% if Legislation2 %>
+				<a href="$Legislation2.URL" class="btn">Legislation 2 <img src="$Legislation2.Icon" alt = "Image representing a Downloadable Document"/></a>
+			<% end_if %>
+		<% else %>
+			There are no meeting documents listed for this meeting.
 		<% end_if %>
-		<% if MeetingNotes %>
-			<a href="$MeetingNotes.URL" class="btn">Meeting Minutes <img src="$MeetingNotes.Icon" alt ="Image representing a Downloadable Document" /></a>
-		<% end_if %>
-		<% if Legislation1 %>
-			<a href="$Legislation1.URL" class="btn">Legislation 1 <img src="$Legislation1.Icon" alt= "Image representing a Downloadable Document"/></a>
-		<% end_if %>
-		<% if Legislation2 %>
-			<a href="$Legislation2.URL" class="btn">Legislation 2 <img src="$Legislation2.Icon" alt = "Image representing a Downloadable Document"/></a>
-		<% end_if %>	
 	</p>
 	
 		<% if Notes %>
