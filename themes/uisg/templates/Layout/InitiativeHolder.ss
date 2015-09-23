@@ -14,9 +14,10 @@
 		    		<h1><a href="$Link">Featured: $Title</a></h1>
 		    		<p> $Content.Summary(100) <a href="$Link"> Continue Reading </a> </p>
 		    	<% end_with %>
-		    <% end_if %>
 		    <hr />
 	    	<h2>All Initiatives</h2>
+		    <% end_if %>
+
 	    	$Form
 	    	$Content
 			<ul class="large-block-grid-2 initiatives-list">
@@ -39,29 +40,6 @@
                     </li>
                   <% end_loop %>
 
-	    	<%-- <h1>$Title</h1>
-	    	$Form
-	    	$Content
-			<ul class="initiatives-list">
-                  <% loop $Initiatives %>
-                        <li>
-                              <% if $MainImage %>
-                              <a href="$Link" class="initiatives-link">
-                                    
-                                    <img data-src="$MainImage.CroppedImage(350,234).URL" alt="$Title" src="<% include PlaceholderLargeSrc %>" class="initiatives-img">
-                              </a>
-                              <% else %>
-	                          <a href="$Link" class="initiatives-link no-image"> 
-	                             	<p class="NoLogo">$Title</p>  
-	                             	<img data-src="{$ThemeDir}/images/no-image-initiative.jpg" alt="$Title" class="initiatives-img"> 
-			                          	 		 		
-	                             </a>
-                              <% end_if %>
-                         
-                        </li>
-                  <% end_loop %>
-                        <li class="filler"></li>
-                        <li class="filler"></li> --%>
             </ul>
         </section>
                 

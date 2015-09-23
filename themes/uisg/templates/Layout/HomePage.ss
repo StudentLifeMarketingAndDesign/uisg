@@ -49,7 +49,7 @@
 <section class="home-highlights">
         <div class="container clearfix">
           <div class="module facebook">   
-            <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fuistudentgov&amp;width&amp;height=395&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=127918570561161" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:395px;" allowTransparency="true"></iframe>
+            <% include FbPageBox %>
           </div>
           <div class="module question-box">
             <div class="inner">
@@ -66,14 +66,14 @@
             <div class="inner">
               <h3>Latest Posts</h3>
               <% with $Page("news") %>
-                <% loop Entries(3) %>
+                <% loop BlogPosts.Limit(3) %>
                 <article>
                   <h4><a href="$Link">$Title</a></h4>
                  	 <p>$Content.LimitCharacters(60) <a href="$Link" title="Read more on &quot;{$Title}&quot;">Continue Reading</a></p>
                 </article>
                 <hr />
                 <% end_loop %>
-                <p><a href="$Link">View all news</a></p>
+                <p><a href="$Link">View all news &rarr;</a></p>
               <% end_with %>
             </div>
           </div>
