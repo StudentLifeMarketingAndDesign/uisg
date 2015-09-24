@@ -166,67 +166,7 @@ table.meetings a{
 
 /* Initiative Page*/
 
-.initiatives-title {
-	clear: both;
-}
-.initiatives-list {
-	font-size: 0.1px;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	text-align: justify;
-}
-.initiatives-list:after { /* http://www.barrelny.com/blog/text-align-justify-and-rwd/ */
-	content: '';
-	display: inline-block;
-	width: 100%;
-}
-.initiatives-list li {
-	@include rem(15);
-	margin: 3px;
-	vertical-align: top;
-	text-align: left;
-	@media screen and (min-width: $break-small) {
-		float: left;
-		width: 49%;
-		padding: 0;
-	}
-	@media screen and (min-width: $break-medium) {
-		
-	}
-}
-.initiatives-list .filler {
-	height: 0;
-	margin: 0;
-}
-.initiatives-img {
-	width: 100%;
-}
-.initiatives-link {
-	display: block;
-	margin-bottom: 0;
-	position: relative;
-}
-.initiatives-link:before {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-ms-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-}
-.initiatives-link:hover:before {
-	border: 4px solid $yellow;
-}
-.initiatives-name {margin: 0;}
-.initiatives-position {
-	display: block;
-}
-.initiatives-name {
-	margin: 0;
-}
+
 
 .NoLogo {
 		position: absolute;
@@ -262,6 +202,16 @@ table.meetings a{
 	margin: 0;
 }
 
+.initiatives-list {
+	h2 {
+		margin-top: 5px;
+		margin-bottom: 0;
+	}
+
+	p{
+		margin-top: 5px;
+	}
+}
 .initiatives-content {
 	@media screen and (min-width: 768px){
 		background: #fff;
