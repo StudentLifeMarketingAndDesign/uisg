@@ -25,16 +25,16 @@
 						</td>
 						<td class="documents">
 							<% if Agenda %>
-								<a href="$Agenda.URL" class="btn">Agenda <img src="$Agenda.Icon" alt="Agenda Icon"/></a>
+								<a href="$Agenda.URL" class="btn">Agenda <img src="$Agenda.Icon" class="show-for-large-up" alt="Agenda Icon"/></a>
 							<% end_if %>
 							<% if MeetingNotes %>
-								<a href="$MeetingNotes.URL" class="btn">Meeting Minutes <img src="$MeetingNotes.Icon" alt="Meeting Notes Icons"/></a> 
+								<a href="$MeetingNotes.URL" class="btn">Meeting Minutes <img src="$MeetingNotes.Icon" class="show-for-large-up"  alt="Meeting Notes Icons"/></a> 
 							<% end_if %>
 							<% if Legislation1 %>
-								<a href="$Legislation1.URL" class="btn">Legislation 1 <img src="$Legislation1.Icon" alt ="Legislation Icon" /></a>
+								<a href="$Legislation1.URL" class="btn">Legislation 1 <img src="$Legislation1.Icon" class="show-for-large-up"  alt ="Legislation Icon" /></a>
 							<% end_if %>
 							<% if Legislation2 %>
-								<a href="$Legislation2.URL" class="btn">Legislation 2 <img src="$Legislation2.Icon" alt ="Legislation Icon"/></a>
+								<a href="$Legislation2.URL" class="btn">Legislation 2 <img src="$Legislation2.Icon" class="show-for-large-up" alt ="Legislation Icon"/></a>
 							<% end_if %>			
 						</td>
 					</tr>
