@@ -15,7 +15,7 @@
 					<th>Available Documents</th>
 				</tr>
 				    <tbody class="table-page table-start">	
-					  <% loop Meetings %>
+					  <% loop Meetings.Limit(5) %>
 						  <% if $MultipleOf(10) %>
 							</tbody>				
 					        <tbody class="table-page">
