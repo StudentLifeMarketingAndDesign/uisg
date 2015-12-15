@@ -6,6 +6,7 @@
 	<h1>$Title</h1>
 			<% loop AllChildren %>
 				<h2> $Title </h2>
+					$Content
 				<table class="meetings">
 			
 				<tr>
@@ -13,8 +14,11 @@
 					<th>Available Documents</th>
 				</tr>
 				    <tbody class="table-page table-start">	
-					  <% loop Meetings %>
-						
+					  <% loop Meetings.Limit(5) %>
+						  <% if $MultipleOf(10) %>
+							</tbody>				
+					        <tbody class="table-page">
+						  <% end_if %>
 						<tr class="$EvenOdd">
 						<td><a href="$Link">$Date.Format("F d, Y") $Time &rarr;</a>
 						</td>
@@ -36,6 +40,9 @@
 					<% end_loop %>
 					</tbody>
 			   </table>
+			   <div class="showMore">
+			   <li><a href="$Link" class="$LinkingMode">All $Title</a></li>
+			   </div>	
 			<% end_loop %>
 	    </section>
 	    <section class="sec-content hide-print">

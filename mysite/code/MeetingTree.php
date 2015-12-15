@@ -1,9 +1,9 @@
 <?php
-class MeetingHolder extends Page {
+class MeetingTree extends Page {
 
 	private static $db = array();
 	private static $has_one = array();
-	private static $allowed_children = array('MeetingPage');
+	private static $allowed_children = array('MeetingPage','MeetingHolder', 'MeetingTree');
 	
 	public function Meetings(){
 		$children = $this->Children();
@@ -16,7 +16,7 @@ class MeetingHolder extends Page {
 	
 }
 	
-class MeetingHolder_Controller extends Page_Controller {
+class MeetingTree_Controller extends Page_Controller {
 
 	public static $allowed_actions = array ( "PaginatedPages" );
 	
