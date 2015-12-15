@@ -4,21 +4,26 @@
 	    <section class="main-content <% if $BackgroundImage %>margin-top<% end_if %>">
 
 	<h1>$Title</h1>
-			<% loop AllChildren %>
+			
 				<h2> $Title </h2>
 				<table class="meetings">
-			
+
 				<tr>
 					<th>Meeting Date</th>
 					<th>Available Documents</th>
 				</tr>
 				    <tbody class="table-page table-start">	
 					  <% loop Meetings %>
+					  <% if $MultipleOf(10) %>
+							</tbody>				
+					        <tbody class="table-page">
+						  <% end_if %>
 						
 						<tr class="$EvenOdd">
 						<td><a href="$Link">$Date.Format("F d, Y") $Time &rarr;</a>
 						</td>
 						<td class="documents">
+								<% if $Agenda || $MeetingNotes || $Legislation1 || $Legislation2 %>
 							<% if Agenda %>
 								<a href="$Agenda.URL" class="btn">Agenda <img src="$Agenda.Icon" class="show-for-large-up" alt="Agenda Icon"/></a>
 							<% end_if %>
@@ -30,13 +35,15 @@
 							<% end_if %>
 							<% if Legislation2 %>
 								<a href="$Legislation2.URL" class="btn">Legislation 2 <img src="$Legislation2.Icon" class="show-for-large-up" alt ="Legislation Icon"/></a>
+							<% end_if %>
+							<% else %>
+								There are no meeting documents listed for this meeting.
 							<% end_if %>			
 						</td>
 					</tr>
 					<% end_loop %>
 					</tbody>
 			   </table>
-			<% end_loop %>
 	    </section>
 	    <section class="sec-content hide-print">
 	    	<% include SideContact %>
