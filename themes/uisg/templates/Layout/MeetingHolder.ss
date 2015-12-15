@@ -41,7 +41,9 @@
 					<% end_loop %>
 					</tbody>
 			   </table>
-			   <div class="showMore"></div>	
+			   <div class="showMore">
+			   <li><a href="$Link" class="$LinkingMode">All $Title</a></li>
+			   </div>	
 			<% end_loop %>
 	    </section>
 	    <section class="sec-content hide-print">
