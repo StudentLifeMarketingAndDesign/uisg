@@ -41,7 +41,8 @@
 					</tbody>
 			   </table>
 			   <div class="showMore">
-			   <li><a href="$Link" class="$LinkingMode">All $Title</a></li>
+			   	<hr />
+			  	<p class="text-right"><a href="$Link" class="$LinkingMode">$Title Archive &rarr;</a></p>
 			   </div>	
 			<% end_loop %>
 	    </section>
