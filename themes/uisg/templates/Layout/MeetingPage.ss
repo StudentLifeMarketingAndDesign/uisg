@@ -43,4 +43,4 @@
 	    </section>
 	</div>
 </div>
-<%-- <% include TopicsAndNews %> --%>
+ <% include TopicsAndNews %> 

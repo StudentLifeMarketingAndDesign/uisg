@@ -296,12 +296,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "cd19ad0e0022faa9f19a91373d49ac2d2f2a3e96"
+                "reference": "331c0872f32cc9f86d5a2d56aa75fc792d57c7da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/cd19ad0e0022faa9f19a91373d49ac2d2f2a3e96",
-                "reference": "cd19ad0e0022faa9f19a91373d49ac2d2f2a3e96",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/331c0872f32cc9f86d5a2d56aa75fc792d57c7da",
+                "reference": "331c0872f32cc9f86d5a2d56aa75fc792d57c7da",
                 "shasum": ""
             },
             "require": {
@@ -324,7 +324,7 @@
                 "silverstripe/installer": "*",
                 "silverstripe/mathspamprotection": "*",
                 "silverstripe/recaptcha": "*",
-                "silverstripe/spamprotection": "*",
+                "silverstripe/spamprotection": "2.0.*",
                 "silverstripe/staticpublisher": "*",
                 "silverstripe/timepickerfield": "*",
                 "silverstripe/userforms": "*",
@@ -341,7 +341,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/2.2.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2015-12-18 16:11:15"
+            "time": "2015-12-29 18:19:27"
         },
         {
             "name": "md/rss-display",

@@ -1,17 +1,18 @@
 @import "../../../../division-project/scss/imports/_config.scss";
 @import "../../../../division-project/scss/imports/_mixins.scss";
 
-
 body {
-        background-color: #292929;
-        background-image: url('../images/background.jpg');
-        background-repeat: repeat-x;
+	background-color: #292929;
+	background-image: url("../images/background.jpg");
+	background-repeat: repeat-x;
 }
 
 /* Nav Overrides */
 
-.header{
-	background-color: #2D2D2D; /* for older browsers */
+.header {
+	background-color: #2D2D2D;
+
+	/* for older browsers */
 	background-color: rgba(29, 29, 29, 0.55);
 }
 
@@ -28,9 +29,11 @@ body {
 	.nav-main li:first-child {
 		border-left: none;
 	}
+
 	.nav-main li {
 		border-right: none;
 	}
+
 	.nav-main a {
 		color: white;
 	}
@@ -44,11 +47,10 @@ aside .mod h3 {
 	color: #333;
 }
 
-
-
-
 /* Fix Staff Background */
-.initiatives-container {background-color: white;}
+.initiatives-container {
+	background-color: white;
+}
 
 #gradient {
 	margin: auto;
@@ -63,30 +65,27 @@ aside .mod h3 {
 
 #content {
 	padding-top: 13px;
-	margin:auto;
+	margin: auto;
 	position: relative;
-	min-height:700px;
-	background:#f5f5f5;
-	-webkit-box-shadow:#b7b7b7 1px 1px 6px 1px inset;
+	min-height: 700px;
+	background: #f5f5f5;
+	-webkit-box-shadow: #b7b7b7 1px 1px 6px 1px inset;
 }
 
-#content ul{
-	padding: 5px; 
+#content ul {
+	padding: 5px;
 }
 
 tr.odd {
-	background:#FFFFFF;
+	background: #FFFFFF;
 }
 
-
-td.name{
-	width:255px;
+td.name {
+	width: 255px;
 	padding: 80px;
 }
 
-tr.even{
-
-}
+tr.even {}
 
 tr {
 	display: table-row;
@@ -94,20 +93,20 @@ tr {
 	border-color: inherit;
 }
 
-td.initiative{
+td.initiative {
 	padding: 20px;
 }
 
 td.img {
-	width: 250px; 
-	background-color:#cfcfcf;
+	width: 250px;
+	background-color: #cfcfcf;
 }
 
-td{
-	padding: 10px; 
+td {
+	padding: 10px;
 }
 
-table.meetings{
+table.meetings {
 	border-collapse: separate;
 	width: 100%;
 }
@@ -118,7 +117,7 @@ table.meetings th {
 	border-top: none;
 }
 
-table.meetings a{
+table.meetings a {
 	display: inline-block;
 }
 
@@ -132,54 +131,52 @@ table.meetings a{
 	padding: 4px;
 }
 
-
-
 .typography td a {
-	color: #334371; 
+	color: #334371;
 }
 
 .innerContent {
-	margin-top: 54px; 
-	margin: 0 auto; 
+	margin-top: 54px;
+	margin: 0 auto;
 	max-width: 1196px;
-	padding: 2em;  
+	padding: 2em;
 }
 
 .MainImage {
-	height: 549px; 
+	height: 549px;
 }
 
 /* Topics in Subfooter */
 
-.topics a {
-	color: #ffedb8;
-}
+.topics {}
 
 .topics {
 	color: #ccc;
+	background: white;
 }
 
 .footer {
 	border: none;
 }
 
-
 /* Staff Page */
 
 .staff-list {
-	margin-top: 20px
+	margin-top: 20px;
 }
-.StaffPage img{
-	/* Vertically orientated staff photo */
-		@media screen and (min-width: $break-medium) {
-			max-width: 200px;
-			float:right;
-		}
-		@media screen and (min-width: $break-large) {
-			max-width: 300px;
-		}
 
+.StaffPage img {
+	/* Vertically orientated staff photo */
+	@media screen and (min-width: $break-medium) {
+		max-width: 200px;
+		float: right;
+	}
+
+	@media screen and (min-width: $break-large) {
+		max-width: 300px;
+	}
 }
+
 /* HomePage Twitter Feed */
 
 .module.twitter {
@@ -198,24 +195,25 @@ table.meetings a{
 .module.facebook {
 	border-top: 4px solid $yellow;
 	overflow: hidden;
-	iframe { width: 240px;
 
+	iframe {
+		width: 240px;
 	}
 
-	@media screen and (min-width: $break-medium){
-		iframe {width: 100%;}
+	@media screen and (min-width: $break-medium) {
+		iframe {
+			width: 100%;
+		}
 	}
-
 }
 
 .module.question-box .inner {
 	border-top: 4px solid $yellow;
 }
 
-.module.latest-post .inner{
+.module.latest-post .inner {
 	border-top: 4px solid $yellow;
 }
-
 
 .twitter-timeline {
 	min-width: 100%;
@@ -224,7 +222,7 @@ table.meetings a{
 
 /* HomePage Contact Form Styles */
 
-#Form_ContactForm .Actions{
+#Form_ContactForm .Actions {
 	margin: 0;
 	padding: 0;
 	background: none;
@@ -235,7 +233,6 @@ table.meetings a{
 
 .side-contact {
 	margin-left: 10px;
-
 }
 
 /*Button*/
@@ -243,6 +240,6 @@ table.meetings a{
 .page-button {
 	font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	background: none;
-	border: 1px solid #ddd; 
-	padding: 10px; 
+	border: 1px solid #ddd;
+	padding: 10px;
 }
