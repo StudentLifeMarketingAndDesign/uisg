@@ -2,8 +2,9 @@
 	<div class="container clearfix">
 		<div class="white-cover"></div>
 	    <section class="main-content <% if $BackgroundImage %>margin-top<% end_if %>">
-
-	<h1>$Title</h1>
+			$Breadcrumbs
+			<h1>$Title</h1>
+			$Content
 			<% loop AllChildren %>
 				<h2> $Title </h2>
 					$Content
