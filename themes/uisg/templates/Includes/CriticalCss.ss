@@ -12,7 +12,7 @@ html, button, input{ color: rgb(34, 34, 34); }
 a{ color: rgb(0, 136, 204); outline-style: none; outline-width: initial; outline-color: initial; text-decoration: none; }
 p, blockquote, ul{ margin-top: 0.6667em; margin-right: 0px; margin-bottom: 0.6667em; margin-left: 0px; }
 h1, h2, h3, h4{ color: rgb(51, 51, 51); font-family: proxima-nova-condensed, 'Arial Narrow', sans-serif; margin-top: 1em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; letter-spacing: 1px; line-height: 1.2; font-weight: 600; text-rendering: optimizelegibility; }
-h1{ font-size: 2.66667rem; font-weight: 300; margin-top: 0.25em; margin-right: 0px; margin-bottom: 0.25em; margin-left: 0px; text-transform: uppercase; padding-bottom: 10px; }
+h1{ font-size: 2.66667rem; text-transform: uppercase; font-weight: 300; margin-top: 0.25em; margin-right: 0px; margin-bottom: 0.25em; margin-left: 0px; padding-bottom: 10px; }
 @media screen and (min-width: 768px){
 h1{ font-size: 4rem; }
 }
@@ -30,6 +30,7 @@ img{ vertical-align: middle; }
 .clearfix::before, .clearfix::after{ content: ' '; display: table; }
 .clearfix::after{ clear: both; }
 .clearfix{ }
+.visuallyhidden{ border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; clip: rect(0px 0px 0px 0px); height: 1px; margin-top: -1px; margin-right: -1px; margin-bottom: -1px; margin-left: -1px; overflow-x: hidden; overflow-y: hidden; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; position: absolute; width: 1px; }
 .division-topbar input[type="submit"]{ -webkit-appearance: button; cursor: pointer; }
 .division-topbar input[type="search"]{ -webkit-appearance: textfield; box-sizing: border-box; }
 .division-topbar *{ box-sizing: border-box; }
@@ -288,7 +289,7 @@ body{ background-image: initial; background-attachment: initial; background-orig
 @media screen and (min-width: 768px){
 .main-content, .sec-content { float: left; }
 }
-.main-content { padding-top: 1em; padding-right: 0px; padding-bottom: 1em; padding-left: 0px; text-overflow: ellipsis; overflow-x: hidden; overflow-y: hidden; }
+.main-content { padding-top: 1em; padding-right: 0px; padding-bottom: 1em; padding-left: 0px; text-overflow: ellipsis; }
 @media screen and (min-width: 768px){
 .main-content { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(221, 221, 221); width: 72%; position: relative; padding-top: 2em; padding-right: 2em; padding-bottom: 3em; padding-left: 2em; background-position: initial initial; background-repeat: initial initial; }
 }
