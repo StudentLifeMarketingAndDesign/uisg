@@ -1,30 +1,35 @@
-
 <div class="gradient">
-      <div class="container clearfix">
-            <div class="white-cover"></div>
-          <section class="main-content staff-content">
-<h1>$Title</h1>
+<div class="container clearfix">
+      <div class="white-cover"></div>
+      <section class="main-content $FirstLast">
+          <h1 class="text-center">$Title</h1>
             $Form
             $Content
-            <% loop Teams %>
-                  <h2 class="staff-title">$Title</h2>
-                  <% if $GroupImage %>
-                        <img src="$GroupImage.SetWidth(800).URL" alt="Group Photo of $Title" class="group-image" />
-                  <% end_if %>
-                  <ul class="staff-list">
+            <% if $Teams %>
+            <% loop $Teams %>
+                  <h2 class="staff-title text-center">$Title</h2>
+                  <ul class="staff-coin-list large">
                   <% loop $SortedStaffPages %>
-                    <% include StaffPageListItem %>
+                        <% include StaffCoin %>
                   <% end_loop %>
                         <li class="filler"></li>
                         <li class="filler"></li>
                   </ul>
-                  
             <% end_loop %>
-          </section>
+            <% else %>
+                  <ul class="staff-coin-list large">
+                  <% loop $Children %>
+                        <% include StaffCoin %>
+                  <% end_loop %>
+                        <li class="filler"></li>
+                        <li class="filler"></li>
+                  </ul>
+            <% end_if %>
+            
+      </section>
           <section class="sec-content hide-print">
-            <% include SideContact %>
             <% include SideNav %>
           </section>
       </div>
 </div>
- <% include TopicsAndNews %>
+<% include TopicsAndNews %>

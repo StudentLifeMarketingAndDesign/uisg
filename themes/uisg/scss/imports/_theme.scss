@@ -165,18 +165,6 @@ table.meetings a {
 	margin-top: 20px;
 }
 
-.StaffPage img {
-	/* Vertically orientated staff photo */
-	@media screen and (min-width: $break-medium) {
-		max-width: 200px;
-		float: right;
-	}
-
-	@media screen and (min-width: $break-large) {
-		max-width: 300px;
-	}
-}
-
 /* HomePage Twitter Feed */
 
 .module.twitter {
