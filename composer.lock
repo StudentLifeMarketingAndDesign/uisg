@@ -359,12 +359,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "dad82f468994d5b48e1326a005617796bea686db"
+                "reference": "4feda18848244e8615d748708af42289672345c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/dad82f468994d5b48e1326a005617796bea686db",
-                "reference": "dad82f468994d5b48e1326a005617796bea686db",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/4feda18848244e8615d748708af42289672345c8",
+                "reference": "4feda18848244e8615d748708af42289672345c8",
                 "shasum": ""
             },
             "require": {
@@ -404,7 +404,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/3.4.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2016-09-02 15:53:32"
+            "time": "2016-09-22 21:20:37"
         },
         {
             "name": "md/rss-display",
@@ -1250,12 +1250,12 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe-labs/silverstripe-staticpublisher.git",
+                "url": "https://github.com/silverstripe/silverstripe-staticpublisher.git",
                 "reference": "d417b6e8694cfda11ecf665277c5d5e04737a49b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-staticpublisher/zipball/d417b6e8694cfda11ecf665277c5d5e04737a49b",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-staticpublisher/zipball/d417b6e8694cfda11ecf665277c5d5e04737a49b",
                 "reference": "d417b6e8694cfda11ecf665277c5d5e04737a49b",
                 "shasum": ""
             },

@@ -15,7 +15,8 @@ module.exports = function(grunt) {
     sass: {
       dist: { 
         files: {
-          '<%=globalConfig.themeDir %>/css/master.css' : '<%=globalConfig.themeDir %>/scss/master.scss'
+          '<%=globalConfig.themeDir %>/css/master.css' : '<%=globalConfig.themeDir %>/scss/master.scss',
+          '<%=globalConfig.themeDir %>/css/editor.css' : 'division-project/scss/editor.scss'
         },                  // Target
         options: {              // Target options
           style: 'compressed',
@@ -94,7 +95,19 @@ module.exports = function(grunt) {
                                   ]
                 }
             }
+        },
+
+      cssmin: {
+        options: {
+          shorthandCompacting: false,
+          roundingPrecision: -1
+        },
+        target: {
+          files: {
+            '<%=globalConfig.themeDir %>/templates/Includes/CriticalCss.ss': ['<%=globalConfig.themeDir %>/templates/Includes/CriticalCss.ss']
+          }
         }
+      }
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -104,9 +117,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-simple-watch');
   grunt.loadNpmTasks('grunt-criticalcss');
-
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   // Default task(s).
   // Note: order of tasks is very important
-  grunt.registerTask('default', ['sass', 'concat', 'uglify', 'criticalcss', 'watch']);
+  grunt.registerTask('default', ['sass', 'concat', 'uglify', 'criticalcss','cssmin', 'watch']);
 
 };
