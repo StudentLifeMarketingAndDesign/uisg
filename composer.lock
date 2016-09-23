@@ -161,12 +161,12 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/johngrogg/ics-parser.git",
+                "url": "https://github.com/u01jmg3/ics-parser.git",
                 "reference": "fe46d0d6d89066679594b101812590ad8517a635"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johngrogg/ics-parser/zipball/fe46d0d6d89066679594b101812590ad8517a635",
+                "url": "https://api.github.com/repos/u01jmg3/ics-parser/zipball/fe46d0d6d89066679594b101812590ad8517a635",
                 "reference": "fe46d0d6d89066679594b101812590ad8517a635",
                 "shasum": ""
             },
@@ -359,12 +359,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "4feda18848244e8615d748708af42289672345c8"
+                "reference": "2e34da3dfefc761597fa681ae8802832f3db0e42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/4feda18848244e8615d748708af42289672345c8",
-                "reference": "4feda18848244e8615d748708af42289672345c8",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/2e34da3dfefc761597fa681ae8802832f3db0e42",
+                "reference": "2e34da3dfefc761597fa681ae8802832f3db0e42",
                 "shasum": ""
             },
             "require": {
@@ -404,7 +404,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/3.4.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2016-09-22 21:20:37"
+            "time": "2016-09-23 18:44:29"
         },
         {
             "name": "md/rss-display",
