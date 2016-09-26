@@ -1,15 +1,15 @@
 <footer class="subfooter clearfix" role="contentinfo">
 	<div class="row">
-		<div class="medium-6 large-5 columns">
+		<div class="medium-6 large-12 columns">
 
 			<% with Page("calendar") %>
-		<div class="large-8 columns mod mod-events">
+		<div class="large-12 columns mod mod-events">
 			<h2 class="mod-title text-center">Upcoming events</h2>
 			<% if $EventList %>
 				
 				<ul class="large-block-grid-3 event-list">
 					
-						<% loop EventList.Limit(6) %>
+						<% loop EventList.Limit(3) %>
 						<li>
 						<a href="$AfterClassLink" target="_blank"><img data-src="$Image.URL" alt="Image representing the event: $Title" src="ac-json-events/images/LocalistEventPlaceholder.jpg" /></a>
 						<h3><a href="$AfterClassLink" target="_blank">$Title</a></h3>
