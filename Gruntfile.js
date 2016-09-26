@@ -92,6 +92,11 @@ module.exports = function(grunt) {
                                   '.breadcrumbs li:after',
                                   '.row',
                                   '.staff-coin-list',
+                                  '.large-block-grid-3',
+                                  '.large-block-grid-4',
+                                  '.large-block-grid-2',
+                                  '.large-block-grid-2>li',
+                                  '.initiatives-list'
                                   ]
                 }
             }
