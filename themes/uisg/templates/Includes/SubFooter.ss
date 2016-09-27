@@ -19,7 +19,7 @@
 					
 				</ul>
 
-				<p class="text-center"><a href="http://events.uiowa.edu/search/events/1?event_types%5B%5D=32570" target="_blank">See all Student Affairs and Curriculum events &rarr;</a></p>
+				<p class="text-center"><a href="http://events.uiowa.edu/" target="_blank">See all events happening on campus &rarr;</a></p>
 			<% else %>
 				<p class="text-center"><a href="http://events.uiowa.edu/" target="_blank" data-icon="&#x23;">See all events happening on campus &rarr;</a></p>
 
