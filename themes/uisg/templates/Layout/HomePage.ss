@@ -28,22 +28,17 @@
 }
 </style>
 <div class="hero">
-        <div class="container clearfix">
-
-        <% if HomePageHeroFeatures.Limit(2) %>
+      <div class="container clearfix">
+        
             <div class="hero-article-wrapper">
-
-              <% loop HomePageHeroFeatures.Limit(2) %>
-                <% include HomePageHeroFeature %>
-              <% end_loop %>
-
-
+              
+                <% include InitiativeHeroFeature %>
+                <% include NewsPostHeroFeature %>
+              
             </div>
-         <% end_if %>
-
+     
          <% include HomePageHeroText %>
-
-        </div>
+      </div>
 
     </div>
 <section class="home-highlights">
@@ -54,7 +49,7 @@
           <div class="module question-box">
             <div class="inner">
               <h3>Questions or Comments for UISG?</h3>
-                <a href="contact/" class="btn">View our contact form</a>
+                <a href="contact/" class="btn btn-large">View our contact form</a>
                 <hr />
                 University of Iowa Student Government <br />
                 260B Iowa Memorial Union <br />
