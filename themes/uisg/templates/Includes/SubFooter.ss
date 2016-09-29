@@ -9,7 +9,7 @@
 				
 				<ul class="large-block-grid-3 event-list">
 					
-						<% loop EventList.Limit(3) %>
+						<% loop EventListRandom.Limit(3) %>
 						<li>
 						<a href="$AfterClassLink" target="_blank"><img data-src="$Image.URL" alt="Image representing the event: $Title" src="ac-json-events/images/LocalistEventPlaceholder.jpg" /></a>
 						<h3><a href="$AfterClassLink" target="_blank">$Title</a></h3>
