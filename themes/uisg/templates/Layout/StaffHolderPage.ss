@@ -2,7 +2,7 @@
 <div class="gradient">
 <div class="container clearfix">
       <div class="white-cover"></div>
-      <section class="main-content $FirstLast">
+      <section class="main-content <% if $BackgroundImage %>margin-top<% end_if %> $FirstLast">
           <h1 class="text-center">$Title</h1>
             $Form
             $Content
