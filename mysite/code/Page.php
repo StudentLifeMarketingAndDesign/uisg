@@ -60,7 +60,7 @@ class Page_Controller extends ContentController {
 		//$messageField = "Your message//Textarea";
 		$fields = array($nameField, $emailField);
 
-		return ContactForm::create("ContactForm", "uisg@uiowa.edu", "You've received a new contact form!")
+		return ContactForm::create("ContactForm", "dustin-quam@uiowa.edu", "[UISG Website Contact Form]")
 			->addFields($fields)
 			->setRequiredFields($fields)
 			// You can add fields as strings, too.
