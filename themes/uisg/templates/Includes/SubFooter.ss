@@ -41,7 +41,5 @@
 			<% end_if %>
 		</div>
 		<% end_with %>
-
 		</div>
-	</div>
 </footer>
