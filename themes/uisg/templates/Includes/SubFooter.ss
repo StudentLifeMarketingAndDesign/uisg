@@ -8,11 +8,13 @@
 					<% if $EventList(1) %>
 						<ul class="large-block-grid-3 event-list">
 							<% loop EventList(1).Limit(3) %>
-							<li>
-							<a href="$AfterClassLink" target="_blank"><img data-src="$Image.URL" alt="Image representing the event: $Title" src="ac-json-events/images/LocalistEventPlaceholder.jpg" /></a>
-							<h3><a href="$AfterClassLink" target="_blank">$Title</a></h3>
-							<% include LocalistDatesNoLinks %>
-							</li>					
+								<li>
+									<a href="$AfterClassLink" target="_blank">
+										<img data-src="$Image.URL" alt="Image representing the event: $Title" src="ac-json-events/images/LocalistEventPlaceholder.jpg" />
+										<h3>$Title</h3>
+										<% include LocalistDatesNoLinks %>
+									</a>
+								</li>	
 							<% end_loop %>
 						</ul>
 						<p class="text-center"><a href="http://afterclass.uiowa.edu" target="_blank">See more events happening on campus &rarr;</a></p>
