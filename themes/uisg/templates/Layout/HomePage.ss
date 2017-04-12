@@ -69,7 +69,7 @@
                 </article>
                 <hr />
                 <% end_loop %>
-                <p><a href="$Link">View all news &rarr;</a></p>
+                <p><a href="$Link">View all &rarr;</a></p>
               <% end_with %>
             </div>
           </div>
