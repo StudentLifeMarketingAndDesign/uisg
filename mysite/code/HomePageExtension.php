@@ -28,7 +28,7 @@ class HomePageExtension extends DataExtension {
 	}
 
 	public function LatestNewsPosts(){
-		$newsHolder = Blog::get()->filter(array('Title' => 'News'))->First();
+		$newsHolder = Blog::get()->filter(array('ID' => 133))->First();
 		return $newsHolder->getBlogPosts()->Limit(2);
 	}
 
