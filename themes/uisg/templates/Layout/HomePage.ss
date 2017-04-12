@@ -60,7 +60,7 @@
           <div class="module latest-post">
             <div class="inner">
               
-              <% with $AnnouncementBlog %>
+              <% with $Blog %>
                 <h3>$Title</h3>
                 <% loop BlogPosts.Limit(3) %>
                 <article>
