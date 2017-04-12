@@ -27,9 +27,14 @@ class HomePageExtension extends DataExtension {
 		$f->removeByName("HomePageHeroFeature");
 	}
 
-	public function LatestNewsPosts(){
+	public function AnnouncementBlog(){
 		$newsHolder = Blog::get()->filter(array('ID' => 133))->First();
-		return $newsHolder->getBlogPosts()->Limit(2);
+		return $newsHolder;
 	}
+
+	// public function LatestNewsPosts(){
+	// 	$newsHolder = Blog::get()->filter(array('ID' => 133))->First();
+	// 	return $newsHolder->getBlogPosts()->Limit(2);
+	// }
 
 }
