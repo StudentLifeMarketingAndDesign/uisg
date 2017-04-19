@@ -352,12 +352,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "d9669b469bb2440c22fb516d8303d763bb7b89f0"
+                "reference": "f5a326378cf458302e8d985ad1b7cc56b038b2d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/d9669b469bb2440c22fb516d8303d763bb7b89f0",
-                "reference": "d9669b469bb2440c22fb516d8303d763bb7b89f0",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/f5a326378cf458302e8d985ad1b7cc56b038b2d2",
+                "reference": "f5a326378cf458302e8d985ad1b7cc56b038b2d2",
                 "shasum": ""
             },
             "require": {
@@ -388,7 +388,7 @@
                 "simplepie/simplepie": "*",
                 "thisisbd/silverstripe-maintenance-mode": "*",
                 "unclecheese/betterbuttons": "1.3.*",
-                "unclecheese/eventcalendar": "*",
+                "unclecheese/eventcalendar": "1.*",
                 "unclecheese/silverstripe-blog-sortable-categories": "*",
                 "undefinedoffset/sortablegridfield": "*"
             },
@@ -398,7 +398,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/1.3.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2017-03-23 14:22:04"
+            "time": "2017-04-19 16:21:04"
         },
         {
             "name": "md/rss-display",
@@ -1495,12 +1495,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/simplepie/simplepie.git",
-                "reference": "59e7204610d3a8989822eba1c0cbf1d1680bd10d"
+                "reference": "3d628875ef6cda045b9a7df6ac509f73756670c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplepie/simplepie/zipball/59e7204610d3a8989822eba1c0cbf1d1680bd10d",
-                "reference": "59e7204610d3a8989822eba1c0cbf1d1680bd10d",
+                "url": "https://api.github.com/repos/simplepie/simplepie/zipball/3d628875ef6cda045b9a7df6ac509f73756670c6",
+                "reference": "3d628875ef6cda045b9a7df6ac509f73756670c6",
                 "shasum": ""
             },
             "require": {
@@ -1547,7 +1547,7 @@
                 "feeds",
                 "rss"
             ],
-            "time": "2017-04-06 03:36:48"
+            "time": "2017-04-19 01:40:44"
         },
         {
             "name": "thisisbd/silverstripe-maintenance-mode",
@@ -1640,16 +1640,16 @@
         },
         {
             "name": "unclecheese/eventcalendar",
-            "version": "dev-master",
+            "version": "1.0.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-event-calendar.git",
-                "reference": "8312aba223e8a10586ed7daa2f0681255adc88ad"
+                "reference": "5b6c6287214a79333ef11f7b8dcd1b7d831de837"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-event-calendar/zipball/8312aba223e8a10586ed7daa2f0681255adc88ad",
-                "reference": "8312aba223e8a10586ed7daa2f0681255adc88ad",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-event-calendar/zipball/5b6c6287214a79333ef11f7b8dcd1b7d831de837",
+                "reference": "5b6c6287214a79333ef11f7b8dcd1b7d831de837",
                 "shasum": ""
             },
             "require": {
@@ -1680,7 +1680,7 @@
                 "events",
                 "silverstripe"
             ],
-            "time": "2017-04-10 22:24:50"
+            "time": "2017-04-18 21:21:01"
         },
         {
             "name": "unclecheese/silverstripe-blog-sortable-categories",
@@ -1729,12 +1729,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/UndefinedOffset/SortableGridField.git",
-                "reference": "94e916b4d91c7c0672a138a6c0a5e82a17c69f91"
+                "reference": "8ba6c2f3f6513aa38782736f90956539cdf8993b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/94e916b4d91c7c0672a138a6c0a5e82a17c69f91",
-                "reference": "94e916b4d91c7c0672a138a6c0a5e82a17c69f91",
+                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/8ba6c2f3f6513aa38782736f90956539cdf8993b",
+                "reference": "8ba6c2f3f6513aa38782736f90956539cdf8993b",
                 "shasum": ""
             },
             "require": {
@@ -1761,7 +1761,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2016-11-24 14:01:29"
+            "time": "2017-04-18 12:35:21"
         }
     ],
     "packages-dev": [],
