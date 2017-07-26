@@ -59,4 +59,4 @@ define("MAIL_FROM_ADDRESS", "uisg@uiowa.edu");
 if(Director::isLive()) {
 	Director::forceSSL();
 }
-
+Authenticator::set_default_authenticator('SAMLAuthenticator');
