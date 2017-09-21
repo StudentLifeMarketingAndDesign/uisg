@@ -42,16 +42,16 @@ $Header
 						<td>
 							<% if $Agenda || $MeetingNotes || $Legislation1 || $Legislation2 %>
 							<% if Agenda %>
-								<a href="$Agenda.URL" class="btn">Agenda <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i></a>
+								<a href="$Agenda.URL" class="btn">Agenda <i class="fa fa-file" aria-hidden="false"></i></a>
 							<% end_if %>
 							<% if MeetingNotes %>
-								<a href="$MeetingNotes.URL" class="btn">Meeting Minutes <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i></a> 
+								<a href="$MeetingNotes.URL" class="btn">Meeting Minutes <i class="fa fa-file" aria-hidden="false"></i></a> 
 							<% end_if %>
 							<% if Legislation1 %>
-								<a href="$Legislation1.URL" class="btn">Legislation 1 <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i></a>
+								<a href="$Legislation1.URL" class="btn">Legislation 1 <i class="fa fa-file" aria-hidden="false"></i></a>
 							<% end_if %>
 							<% if Legislation2 %>
-								<a href="$Legislation2.URL" class="btn">Legislation 2 <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i></a>
+								<a href="$Legislation2.URL" class="btn">Legislation 2 <i class="fa fa-file" aria-hidden="false"></i></a>
 							<% end_if %>
 							<% else %>
 								There are no meeting documents listed for this meeting.
