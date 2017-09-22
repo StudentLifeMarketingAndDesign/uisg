@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "84767debd5c34989902b6a35a8b69d31",
+    "content-hash": "5e658c70b9dd5c954b89cf6bc39246d4",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -483,12 +483,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events.git",
-                "reference": "2868e6d3f19855714b8a76880866c9d2b322ce9d"
+                "reference": "2e21fa0f281475623af400f482e51aa63cfe9e84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/2868e6d3f19855714b8a76880866c9d2b322ce9d",
-                "reference": "2868e6d3f19855714b8a76880866c9d2b322ce9d",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/2e21fa0f281475623af400f482e51aa63cfe9e84",
+                "reference": "2e21fa0f281475623af400f482e51aa63cfe9e84",
                 "shasum": ""
             },
             "require": {
@@ -507,7 +507,34 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/issues"
             },
-            "time": "2017-08-31 21:36:10"
+            "time": "2017-09-21 21:33:07"
+        },
+        {
+            "name": "md/division-analytics",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/StudentLifeMarketingAndDesign/division-analytics.git",
+                "reference": "78fe5340e92d78816702209823fd44238802e7d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-analytics/zipball/78fe5340e92d78816702209823fd44238802e7d5",
+                "reference": "78fe5340e92d78816702209823fd44238802e7d5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "silverstripe/cms": "3.6.1",
+                "silverstripe/framework": "3.6.1"
+            },
+            "type": "silverstripe-module",
+            "description": "The University of Iowa Division of Student Life Analytics",
+            "support": {
+                "source": "https://github.com/StudentLifeMarketingAndDesign/division-analytics/tree/1",
+                "issues": "https://github.com/StudentLifeMarketingAndDesign/division-analytics/issues"
+            },
+            "time": "2017-09-21 14:37:39"
         },
         {
             "name": "md/division-project",
@@ -515,12 +542,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "fb7b708392eb234949425b34f79610546321744f"
+                "reference": "8b0646eed731a4ddee99c9ea6547a5190d2c488f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/fb7b708392eb234949425b34f79610546321744f",
-                "reference": "fb7b708392eb234949425b34f79610546321744f",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/8b0646eed731a4ddee99c9ea6547a5190d2c488f",
+                "reference": "8b0646eed731a4ddee99c9ea6547a5190d2c488f",
                 "shasum": ""
             },
             "require": {
@@ -528,6 +555,7 @@
                 "jonom/focuspoint": "2.4.*",
                 "jonom/silverstripe-betternavigator": "3.*",
                 "md/ac-json-events": "dev-master",
+                "md/division-analytics": "1.*",
                 "md/rss-display": "*",
                 "micschk/silverstripe-gridfieldsitetreebuttons": "*",
                 "normann/gridfieldpaginatorwithshowall": "*",
@@ -568,7 +596,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/2.0.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2017-09-18 16:31:21"
+            "time": "2017-09-18 22:08:12"
         },
         {
             "name": "md/rss-display",
@@ -1195,12 +1223,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-blog.git",
-                "reference": "9a5690ca3e5eaeac4efa0a8bb95528d2cb9cf445"
+                "reference": "35cbc20d5f055b084f53af87853bd680722b2c07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-blog/zipball/9a5690ca3e5eaeac4efa0a8bb95528d2cb9cf445",
-                "reference": "9a5690ca3e5eaeac4efa0a8bb95528d2cb9cf445",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-blog/zipball/35cbc20d5f055b084f53af87853bd680722b2c07",
+                "reference": "35cbc20d5f055b084f53af87853bd680722b2c07",
                 "shasum": ""
             },
             "require": {
@@ -1240,7 +1268,7 @@
                 "news",
                 "silverstripe"
             ],
-            "time": "2017-09-14 04:53:42"
+            "time": "2017-09-19 11:03:21"
         },
         {
             "name": "silverstripe/cms",
@@ -1439,12 +1467,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-lumberjack.git",
-                "reference": "7115455b68782b1065e2f3bc29dfda12fd77de84"
+                "reference": "4c13690b0766dfd5d6348b6415c8c72c4840e7b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-lumberjack/zipball/7115455b68782b1065e2f3bc29dfda12fd77de84",
-                "reference": "7115455b68782b1065e2f3bc29dfda12fd77de84",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-lumberjack/zipball/4c13690b0766dfd5d6348b6415c8c72c4840e7b4",
+                "reference": "4c13690b0766dfd5d6348b6415c8c72c4840e7b4",
                 "shasum": ""
             },
             "require": {
@@ -1471,7 +1499,7 @@
                 }
             ],
             "description": "A module to make managing pages in a GridField easy without losing any of the functionality that you're used to in the CMS.",
-            "time": "2017-06-15 18:18:50"
+            "time": "2017-09-21 04:44:28"
         },
         {
             "name": "silverstripe/mathspamprotection",
