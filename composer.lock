@@ -542,12 +542,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "18236070120d749b145da26a4daeaa19fd72dabe"
+                "reference": "6621bf982b11178e29685ebdfa45b03bf5a4384d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/18236070120d749b145da26a4daeaa19fd72dabe",
-                "reference": "18236070120d749b145da26a4daeaa19fd72dabe",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/6621bf982b11178e29685ebdfa45b03bf5a4384d",
+                "reference": "6621bf982b11178e29685ebdfa45b03bf5a4384d",
                 "shasum": ""
             },
             "require": {
@@ -565,6 +565,7 @@
                 "sheadawson/quickaddnew": "*",
                 "sheadawson/silverstripe-blocks": "1.1.1",
                 "sheadawson/silverstripe-linkable": "1.3.*",
+                "silverstripe-rebelalliance/youtubefield": "*",
                 "silverstripe-themes/simple": "*",
                 "silverstripe/activedirectory": "3.*",
                 "silverstripe/blog": "2.*",
@@ -596,7 +597,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/2.0.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2017-09-22 16:02:11"
+            "time": "2017-09-25 15:24:30"
         },
         {
             "name": "md/rss-display",
@@ -1115,6 +1116,45 @@
                 "silverstripe"
             ],
             "time": "2017-01-30 01:05:02"
+        },
+        {
+            "name": "silverstripe-rebelalliance/youtubefield",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe-terraformers/silverstripe-youtubefield.git",
+                "reference": "2d8b01d0c7ba4b7707b20382f96781248fc7eee1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe-terraformers/silverstripe-youtubefield/zipball/2d8b01d0c7ba4b7707b20382f96781248fc7eee1",
+                "reference": "2d8b01d0c7ba4b7707b20382f96781248fc7eee1",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~3.0"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "youtubefield"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ed Linklater",
+                    "email": "ed@silverstripe.com"
+                }
+            ],
+            "description": "Field for selecting YouTube videos. Takes various URL formats as input and stores the YouTube ID.",
+            "keywords": [
+                "formfield",
+                "silverstripe",
+                "youtube"
+            ],
+            "time": "2017-01-18 02:08:59"
         },
         {
             "name": "silverstripe-themes/simple",
