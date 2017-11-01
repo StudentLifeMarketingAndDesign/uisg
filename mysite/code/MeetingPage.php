@@ -22,6 +22,8 @@ class MeetingPage extends Page {
 	
 	);
 
+	private static $default_sort = "Date DESC";
+
 	public function getCMSFields()	{
 	
 		$fields = parent::getCMSFields();
