@@ -13,6 +13,12 @@ class MeetingHolder extends Page {
 		}
 		
 	}
+
+	public function Children(){
+		$children = MeetingPage::get()->filter(array('ParentID' => $this->ID))->sort("Date", "DESC");
+
+		return $children;
+	}
 	
 }
 	
