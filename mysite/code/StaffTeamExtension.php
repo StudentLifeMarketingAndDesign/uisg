@@ -1,6 +1,6 @@
 <?php
 
-class StaffTeamExtension extends DataExtension {
+class StaffTeamExtension extends SilverStripe\ORM\DataExtension {
 
 	static $db = array(
     

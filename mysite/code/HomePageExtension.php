@@ -1,6 +1,6 @@
 <?php
 
-class HomePageExtension extends DataExtension {
+class HomePageExtension extends SilverStripe\ORM\DataExtension {
 
 	private static $db = array (
 
