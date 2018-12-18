@@ -27,3 +27,22 @@
 	display: inline;
 	float: none;
 }
+
+
+.accordion-title--dark-bg{
+    background-color: #222;
+    color: white;
+    border: none;
+}
+
+:last-child:not(.is-active)>.accordion-title{
+    border: none;
+}
+.accordion-content--dark-bg{
+    background-color: #222;
+    border: none;
+}
+
+:last-child>.accordion-content--dark-bg:last-child{
+    border: none;
+}

@@ -22,10 +22,25 @@
 								<li class="sidenav__item sidenav__item--second-level sidenav__item--$LinkingMode"><a class="sidenav__link" href="<% if $regularLink %>$regularLink<% else %>$Link<% end_if %>">$MenuTitle</a>
 									<% if $LinkOrSection = "section" && Children %>
 										<ul class="sidenav__third-level">
-											<% loop Children %>
+											<% loop Children.Limit(10) %>
 												<li class="sidenav__item sidenav__item--third-level sidenav__item--$LinkingMode"><a class="sidenav__link" href="<% if $regularLink %>$regularLink<% else %>$Link<% end_if %>">$MenuTitle</a>
 											<% end_loop %><%-- end_loop Children --%>
 										</ul>
+                                        <% if $Children.Count > 10 %>
+
+                                        <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+                                             <li class="accordion-item" data-accordion-item>
+                                                <a href="#" class="accordion-title accordion-title--dark-bg">Previous meetings</a>
+                                                <div class="accordion-content accordion-content--dark-bg" data-tab-content>
+                                                <ul class="sidenav__third-level">
+                                                    <% loop $Children.Limit(99999,10) %>
+                                                        <li class="sidenav__item sidenav__item--third-level sidenav__item--$LinkingMode"><a class="sidenav__link" href="<% if $regularLink %>$regularLink<% else %>$Link<% end_if %>">$MenuTitle</a>
+                                                    <% end_loop %><%-- end_loop Children --%>
+                                                </ul>
+                                                </div>
+                                            </li>
+
+                                        <% end_if %>
 									<% end_if %><%-- end_if $LinkOrSection = "section" && Children --%>
 								</li>
 							<% end_loop %><%-- end_loop Children --%>

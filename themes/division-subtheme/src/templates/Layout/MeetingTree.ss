@@ -17,40 +17,40 @@ $Header
 
 	$BlockArea(BeforeContent)
 	<div class="row">
-	    <article role="main" class="main-content main-content--with-padding <% if $SiteConfig.ShowExitButton %>main-content--with-exit-button-padding<% end_if %> <% if $Children || $Menu(2) || $SidebarBlocks ||  $SidebarView.Widgets %>main-content--with-sidebar<% else %>main-content--full-width<% end_if %>">
+	    <article role="main" class="main-content main-content--with-padding <% if $SiteConfig.ShowExitButton %>main-content--with-exit-button-padding<% end_if %> <% if $Children || $Menu(2) || $SidebarArea.Elements ||  $SidebarView.Widgets %>main-content--with-sidebar<% else %>main-content--full-width<% end_if %>">
 	    	$BlockArea(BeforeContentConstrained)
 			<div class="main-content__text">
 			<% loop AllChildren %>
 				<h2> $Title </h2>
 					$Content
 				<table>
-			
+
 				<tr>
 					<th>Meeting Date</th>
 					<th>Available Documents</th>
 				</tr>
-				    <tbody>	
+				    <tbody>
 					  <% loop Meetings.Limit(5) %>
 						  <% if $MultipleOf(10) %>
-							</tbody>				
+							</tbody>
 					        <tbody>
 						  <% end_if %>
 						<tr class="$EvenOdd">
-						<td><a href="$Link">$Date.Format("F d, Y") $Time </a>
+						<td><a href="$Link">$Date.Nice $Time </a>
 						</td>
 						<td>
 							<% if Agenda %>
 								<a href="$Agenda.URL" class="btn">Agenda</a>
 							<% end_if %>
 							<% if MeetingNotes %>
-								<a href="$MeetingNotes.URL" class="btn"> Meeting Minutes</a> 
+								<a href="$MeetingNotes.URL" class="btn"> Meeting Minutes</a>
 							<% end_if %>
 							<% if Legislation1 %>
 								<a href="$Legislation1.URL" class="btn"> Legislation 1</a>
 							<% end_if %>
 							<% if Legislation2 %>
 								<a href="$Legislation2.URL" class="btn"> Legislation 2</a>
-							<% end_if %>			
+							<% end_if %>
 						</td>
 					</tr>
 					<% end_loop %>

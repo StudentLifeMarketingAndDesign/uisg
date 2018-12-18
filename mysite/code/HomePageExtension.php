@@ -1,6 +1,10 @@
 <?php
 
-class HomePageExtension extends SilverStripe\ORM\DataExtension {
+use SilverStripe\Forms\FieldList;
+use SilverStripe\ORM\DataExtension;
+use SilverStripe\Forms\DropdownField;
+
+class HomePageExtension extends DataExtension {
 
 	private static $db = array (
 

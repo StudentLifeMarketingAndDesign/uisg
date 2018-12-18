@@ -16,10 +16,10 @@ $Header
 		</div>
 	<% end_if %>
 
-	$BlockArea(BeforeContent)
+	$BeforeContent
 	<div class="row">
 
-	    <article role="main" class="main-content main-content--with-padding <% if $SiteConfig.ShowExitButton %>main-content--with-exit-button-padding<% end_if %> <% if $Children || $Menu(2) || $SidebarBlocks ||  $SidebarView.Widgets %>main-content--with-sidebar<% else %>main-content--full-width<% end_if %>">
+	    <article role="main" class="main-content main-content--with-padding <% if $SiteConfig.ShowExitButton %>main-content--with-exit-button-padding<% end_if %> <% if $Children || $Menu(2) || $SidebarArea.Elements ||  $SidebarView.Widgets %>main-content--with-sidebar<% else %>main-content--full-width<% end_if %>">
 	    	$BlockArea(BeforeContentConstrained)
 			<div class="main-content__text">
 				<table>
@@ -28,15 +28,15 @@ $Header
 					<th>Meeting Date</th>
 					<th>Available Documents</th>
 				</tr>
-				    <tbody>	
+				    <tbody>
 					  <% loop Meetings %>
 					  <% if $MultipleOf(10) %>
-							</tbody>				
+							</tbody>
 					        <tbody>
 						  <% end_if %>
-						
+
 						<tr class="$EvenOdd">
-						<td><a href="$Link">$Date.Format("F d, Y") $Time </a>
+						<td><a href="$Link">$Date.Nice $Time </a>
 						</td>
 						<td>
 							<% if $Agenda || $MeetingNotes || $Legislation1 || $Legislation2 %>
@@ -44,7 +44,7 @@ $Header
 								<a href="$Agenda.URL" class="btn">Agenda</a>
 							<% end_if %>
 							<% if MeetingNotes %>
-								<a href="$MeetingNotes.URL" class="btn">Meeting Minutes</a> 
+								<a href="$MeetingNotes.URL" class="btn">Meeting Minutes</a>
 							<% end_if %>
 							<% if Legislation1 %>
 								<a href="$Legislation1.URL" class="btn">Legislation 1</a>
@@ -54,14 +54,14 @@ $Header
 							<% end_if %>
 							<% else %>
 								There are no documents listed for this meeting.
-							<% end_if %>			
+							<% end_if %>
 						</td>
 					</tr>
 					<% end_loop %>
 					</tbody>
 			   </table>
 			</div>
-			$BlockArea(AfterContentConstrained)
+			$AfterContentConstrained
 			$Form
 	    </article>
 	    <aside class="sidebar dp-sticky">
@@ -69,9 +69,9 @@ $Header
 			<% if $SideBarView %>
 				$SideBarView
 			<% end_if %>
-			$BlockArea(Sidebar)
+			$SidebarArea
 		</aside>
 	</div>
 
-	$BlockArea(AfterContent)
+	$AfterContent
 </main>
